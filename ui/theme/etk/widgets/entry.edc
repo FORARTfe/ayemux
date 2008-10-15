@@ -1,0 +1,247 @@
+/**
+ * group "etk/entry"
+ * -----------------------
+ * This group is used for the entry widget. It uses several other groups:
+ * - "etk/entry/text": for the text inside the entry
+ * - "etk/entry/cursor": for the cursor of the entry
+ * - "etk/entry/selection" for the selection of the entry
+ *
+ * Different settings:
+ * -------------------
+ * - "icon_highlight_color": the rgba color of the entry's icons the mouse pointer is above them.
+ *      The most common icon is the "Clear" icon on the right of the text. Default value is "128 128 128 255"
+ * - "icon_interspace": the amount of space between an icon of the entry and the text. Default value is 5
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
+ *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
+ */
+group {
+   name: "etk/entry";
+   min: 120 22;
+   data {
+      item: "inset" "5 5 3 4";
+      item: "icon_highlight_color" "138 171 225 210";
+   }
+   parts {
+      part {
+         name: "entry";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image {
+               normal: "entry.png";
+               border: 5 5 8 6;
+            }
+         }
+      }
+      part {
+         name: "focus_clip";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+         }
+         description {
+            state: "focused" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+         }
+      }
+      part {
+         name: "focus";
+         clip_to: "focus_clip";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image.normal: "entry_focus.png";
+            image.border: 7 7 8 7;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "entry_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "focused" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
+      }
+      program {
+         name: "entry_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
+      }
+   }
+}
+
+
+/**
+ * group "etk/entry/text"
+ * -----------------------
+ * This group corresponds to the text of the entry
+ *
+ * Special parts:
+ * --------------
+ * - "etk.text.text": the text part used to display the text of the entry
+ */
+group {
+   name: "etk/entry/text";
+   alias: "etk/spinner/text";
+   parts {
+      part {
+         name: "etk.text.text";
+         type: TEXT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 7 7 7 255;
+            text {
+               text: "Entry";
+               font: "Vera";
+               size: 10;
+               min: 1 1;
+               align: 0.0 0.5;
+            }
+         } 
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 7 7 7 128;
+         }	
+      }
+   }
+   programs {
+      program {
+         name: "text_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.text";
+      }
+      program {
+         name: "text_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.text";
+      }
+   }
+}
+
+
+/**
+ * group "etk/entry/cursor"
+ * -----------------------
+ * This group corresponds to the text-cursor of the entry
+ *
+ * Signals:
+ * --------
+ * - "etk,action,show,cursor": this signal is emitted each time the cursor should become visible (when the entry is
+ *      focused or when the cursor is moved). Note that the blinking of the cursor should still be done by the theme
+ */
+group {
+   name: "etk/entry/cursor";
+   alias: "etk/spinner/cursor";
+   min: 1 0;
+   parts {
+      part {
+         name: "cursor";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 0 0 0 255;
+            visible: 0;
+         }
+         description {
+            state: "visible" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "on_cursor_show";
+         signal:  "etk,action,show,cursor";
+         source:  "etk";
+         action: ACTION_STOP;
+         target: "cursor_show";
+         target: "cursor_hide";
+         target: "cursor_show_timer";
+         target: "cursor_hide_timer";
+         after: "cursor_show";
+      }
+      program {
+         name: "cursor_show";
+         action: STATE_SET "visible" 0.0;
+         target: "cursor";
+         after: "cursor_show_timer";
+      }
+      program {
+         name: "cursor_hide";
+         action: STATE_SET "default" 0.0;
+         target: "cursor";
+         after: "cursor_hide_timer";
+      }
+      program {
+         name: "cursor_show_timer";
+         in: 1.0 0.0;
+         after: "cursor_hide";
+      }
+      program {
+         name: "cursor_hide_timer";
+         in: 0.25 0.0;
+         after: "cursor_show";
+      }
+   }
+}
+
+
+/**
+ * group "etk/entry/selection"
+ * -----------------------
+ * This group corresponds to the selection rectangle used by an entry
+ *
+ * Different settings:
+ * -------------------
+ * - "on_foreground": a boolean indicating whether the selection should be stacked above or below the text of the entry.
+ *      If "on_foreground" is "1", the selection will be stacked above the text, otherwise it will be stacked below.
+ *      Default value is "0"
+ */
+group {
+   name: "etk/entry/selection";
+   alias: "etk/spinner/selection";
+   data {
+      item: "on_foreground" "0";
+   }
+   parts {
+      part {
+         name: "selection";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+	    color: 138 171 225 229;
+         }
+      }
+   }
+}

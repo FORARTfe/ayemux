@@ -1,0 +1,120 @@
+/**
+ * group "etk/window"
+ * ----------------
+ * This group corresponds to the background of a window.
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+group {
+   name: "etk/window";
+   data {
+      item: "inset" "1 1 1 1";
+   }
+   parts {
+      part {
+         name: "background";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0 0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image {
+               normal: "dialog_bg.png";
+               border: 2 2 2 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}
+
+/**
+ * group "etk/dialog"
+ * ----------------
+ * This group corresponds to the background of a dialog.
+ * A dialog is a window separated in two areas, the upper area where the main widgets
+ * are packed and the lower area (also called "action area") where the buttons
+ * (Ok, Cancel, Apply, ...) are packed. These two areas may be separated by an
+ * horizontal separator (see group "etk/dialog/separator")
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+group {
+   name: "etk/dialog";
+   data {
+      item: "inset" "5 5 5 5";
+   }
+   parts {
+      part {
+         name: "background";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0 0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image {
+               normal: "dialog_bg.png";
+               border: 2 2 2 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}
+
+/**
+ * group "etk/dialog/hseparator"
+ * ----------------
+ * This group corresponds to the horizontal separator that may be packed between
+ * the upper area and the action area. The separator is always stacked below the
+ * two areas of the dialog.
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+group {
+   name: "etk/dialog/hseparator";
+   min: 0 12;
+   parts {
+      part {
+         name: "separator";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: 0 -6;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -1 5;
+            }
+            image {
+               normal: "dialog_separator.png";
+               border: 0 0 0 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}

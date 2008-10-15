@@ -1,0 +1,320 @@
+/**
+ * group "etk/entry"
+ * -----------------------
+ * This group is used for the spinner widget. It uses several other groups:
+ * - "etk/spinner/text": for the text inside the spinner
+ * - "etk/spinner/cursor": for the cursor of the spinner
+ * - "etk/spinner/selection" for the selection of the spinner
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
+ *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
+ *
+ * Signals to emit:
+ * ----------------
+ * - "etk,action,increment,start": should be emitted when the value of spinner should start being incremented
+ *      (usually when the up-arrow is pressed)
+ * - "etk,action,increment,stop": should be emitted when the value of spinner should stop being incremented
+ *      (usually when the up-arrow is released)
+ * - "etk,action,decrement,start": should be emitted when the value of spinner should start being decremented
+ *      (usually when the down-arrow is pressed)
+ * - "etk,action,decrement,stop": should be emitted when the value of spinner should stop being decremented
+ *      (usually when the down-arrow is released)
+ */
+group {
+   name: "etk/spinner";
+   min: 50 28;
+   parts {
+      part {
+         name: "button_base";
+         description {
+            state: "default" 0.0;
+	    color: 255 255 255 229;
+	    min: 19 28;
+            max: 19 28;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: 0 4;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 0;
+            }
+            image {
+               normal: "spinner_base.png";
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
+      }
+      part {
+         name: "spinner";
+         description {
+            state: "default" 0.0;
+            min: 25 22;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: 0 -10;
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: -1 12;
+	       to_x: "up_button";
+            }
+            image {
+               normal: "entry.png";
+               border: 5 5 8 6;
+            }
+         }
+      }
+      part {
+         name: "focus_clip";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+         }
+         description {
+            state: "focused" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+         }
+      }
+      part {
+         name: "focus";
+         clip_to: "focus_clip";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: 0 -10;
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: -1 12;
+	       to_x: "up_button";
+            }
+            image.normal: "entry_focus.png";
+            image.border: 7 7 8 7;
+         }
+      }
+      part {
+         name: "up_button";
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 255;
+	    min: 17 14;
+            max: 17 14;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -1 -10;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -1 -1;
+            }
+            image {
+               normal: "spinner_up.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
+      }
+      part {
+         name: "down_button";
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 255;
+	    min: 17 14;
+            max: 17 14;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -1 0;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -1 15;
+            }
+            image {
+               normal: "spinner_down.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
+      }
+      part {
+         name: "etk.swallow.content";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+               to: "spinner";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -6 -1;
+               to: "spinner";
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "spinner_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "focused" 0.0;
+         transition: DECELERATE 0.25;
+         target: "focus_clip";
+      }
+      program {
+         name: "spinner_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.25;
+         target: "focus_clip";
+      }
+      program {
+         name: "spinner_button_up_pressed";
+         signal: "mouse,down,1*";
+         source: "up_button";
+         action: STATE_SET "down" 0.0;
+         target: "up_button";
+         after: "spinner_increment_start";
+      }
+      program {
+         name: "spinner_button_up_released";
+         signal: "mouse,up,1";
+         source: "up_button";
+         action: STATE_SET "default" 0.0;
+         target: "up_button";
+         after: "spinner_increment_stop";
+      }
+      program {
+         name: "spinner_button_down_pressed";
+         signal: "mouse,down,1*";
+         source: "down_button";
+         action: STATE_SET "down" 0.0;
+         target: "down_button";
+         after: "spinner_decrement_start";
+      }
+      program {
+         name: "spinner_button_down_released";
+         signal: "mouse,up,1";
+         source: "down_button";
+         action: STATE_SET "default" 0.0;
+         target: "down_button";
+         after: "spinner_decrement_stop";
+      }
+      
+      program {
+         name: "spinner_increment_start";
+         action: SIGNAL_EMIT "etk,action,increment,start" "";
+      }
+      program {
+         name: "spinner_increment_stop";
+         action: SIGNAL_EMIT "etk,action,increment,stop" "";
+      }
+      program {
+         name: "spinner_decrement_start";
+         action: SIGNAL_EMIT "etk,action,decrement,start" "";
+      }
+      program {
+         name: "spinner_decrement_stop";
+         action: SIGNAL_EMIT "etk,action,decrement,stop" "";
+      }
+      program {
+         name: "enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "button_base";
+         target: "up_button";
+         target: "down_button";
+     }
+      program {
+         name: "disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "button_base";
+         target: "up_button";
+         target: "down_button";
+      }
+   }
+}
+
+
+/***********************************
+ *
+ * Additional groups
+ *
+ ***********************************/
+
+/**
+ * group "etk/spinner/text"
+ * -----------------------
+ * This group corresponds to the text of the spinner
+ *
+ * Special parts:
+ * --------------
+ * - "etk.text.text": the text part used to display the value of the spinner
+ *
+ * Current implementation: alias of "etk/entry/text", see entry.edc
+ */
+
+
+/**
+ * group "etk/spinner/cursor"
+ * -----------------------
+ * This group corresponds to the text-cursor of the spinner
+ *
+ * Signals:
+ * --------
+ * - "etk,action,show,cursor": this signal is emitted each time the cursor should become visible (when the spinner is
+ *      focused or when the cursor is moved). Note that the blinking of the cursor should still be done by the theme
+ *
+ * Current implementation: alias of "etk/entry/cursor", see entry.edc
+ */
+
+
+/**
+ * group "etk/spinner/selection"
+ * -----------------------
+ * This group corresponds to the selection rectangle used by the spinner
+ *
+ * Different settings:
+ * -------------------
+ * - "on_foreground": a boolean indicating whether the selection should be stacked above or below the text of the spinner.
+ *      If "on_foreground" is "1", the selection will be stacked above the text, otherwise it will be stacked below.
+ *      Default value is "0"
+ *
+ * Current implementation: alias of "etk/entry/selection", see entry.edc
+ */

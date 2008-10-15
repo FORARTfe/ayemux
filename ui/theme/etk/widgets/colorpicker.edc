@@ -1,0 +1,444 @@
+/**
+ * group "etk/colorpicker/picker"
+ * -----------------------
+ * This group corresponds to the pickers-zone of the colorpicker. A colorpicker is made of two pickers, one is square
+ * and represents the orthogonal axes of the current color-mode, and one is vertical and is used to control the
+ * component of the current color-mode.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.swallow.square_picker": the part where the square picker of the slider is embedded
+ * - "etk.swallow.vertical_picker": the part where the vertical picker of the slider is embedded
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+ group {
+   name: "etk/colorpicker/picker";
+   min: 210 180;
+   parts {
+      part {
+         name: "background";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            visible: 0;
+            color: 0 0 0 0;
+            rel1 {
+               relative: 0 0;
+               offset: 2 1;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -5 -3;
+            }
+         }
+      }
+      part {
+         name: "square_picker_border";
+         type: IMAGE;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 2 3;
+               to: "background";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -25 -9;
+               to: "background";
+            }
+            image {
+               normal: "cp_box.png";
+               border: 2 2 3 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "vertical_picker_border";
+         type: IMAGE;
+         description {
+            state: "default" 0.0;
+            max: 12 9999;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: -21 3;
+               to: "background";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -9;
+               to: "background";
+            }
+            image {
+               normal: "cp_box.png";
+               border: 2 2 3 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.square_picker";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+               to: "square_picker_border";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -3;
+               to: "square_picker_border";
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.vertical_picker";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            max: 10 9999;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+               to: "vertical_picker_border";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -2;
+               to: "vertical_picker_border";
+            }
+         }
+      }
+   }
+}
+
+
+/**
+ * group "etk/colorpicker/hslider"
+ * -----------------------
+ * This group corresponds to the horizontal-slider used for each component (H, S, V, R, G, B) in the colorpicker.
+ * Note that the alpha slider use the "etk/hslider" group
+ *
+ * Special parts:
+ * --------------
+ * - "etk.swallow.image": the part where the colormap of the slider is embedded
+ * - "etk.dragable.slider": the dragable part used to change the value of the slider
+ * - "etk.text.label": the text part that displays the value of the component
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
+ *      "etk,state,focused", "etk,state,unfocused"
+ */
+group {
+   name: "etk/colorpicker/hslider";
+   min: 140 24;
+   parts {
+      part {
+         name: "focus_rect";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 0 0 0 0;
+            visible: 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -3 -3;
+               to: "trough_left";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 3 2;
+               to: "trough_right";
+            }
+         }
+         description {
+            state: "focused" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+         }
+      }
+      part {
+         name: "trough_left";
+         description {
+            state: "default" 0.0;
+            min: 8 16;
+            max: 8 16;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: 3 -8;
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: 11 8;
+            }
+            image {
+               normal: "cp_slider_trough_left.png";
+               border: 6 0 7 7;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "trough_right";
+         description {
+            state: "default" 0.0;
+            min: 8 16;
+            max: 8 16;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: -13 -8;
+               to_x: "label_under";
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: -5 8;
+               to_x: "label_under";
+            }
+            image {
+               normal: "cp_slider_trough_right.png";
+               border: 0 6 7 7;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "trough";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: 0 0;
+               to: "trough_left";
+            }
+            rel2 {
+               relative: 0.0 1.0;
+               offset: -1 -1;
+               to: "trough_right";
+            }
+            image {
+               normal: "cp_slider_trough.png";
+               border: 1 1 2 2;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.image";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 5;
+               to: "trough";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -6;
+               to: "trough";
+            }
+         }
+      }
+      part {
+         name: "confine";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 255 0 0 128;
+            visible: 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -5 1;
+               to: "trough";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 4 -2;
+               to: "trough";
+            }
+         }
+      }
+      part {
+         name: "etk.dragable.slider";
+         dragable {
+            confine: "confine";
+            x: 1 1 1;
+            y: 0 0 0;
+         }
+         description {
+            state: "default" 0.0;
+            min: 11 19;
+            max: 11 19;
+            image {
+               normal: "cp_slider_drag.png";
+            }
+         }
+      }
+      part {
+         name: "label_under";
+         description {
+            state: "default" 0.0;
+            align: 1.0 0.5;
+            fixed: 1 1;
+            min: 30 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -6 -5;
+               to: "etk.text.label";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 4 2;
+               to: "etk.text.label";
+            }
+            image {
+               normal: "slider_label_bg.png";
+               border: 10 10 8 8;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.text.label";
+         type: TEXT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 60 60 60 255;
+            align: 1.0 0.5;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -5 1;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -5 1;
+            }
+            text {
+               text: "0";
+               font: "Vera";
+               size: 10;
+               min: 1 1;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "cp_slider_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "focused" 0.0;
+         target: "focus_rect";
+      }
+      program {
+         name: "cp_slider_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "focus_rect";
+      }
+   }
+}
+
+
+/**
+ * group "etk/colorpicker/color_preview"
+ * -----------------------
+ * This group corresponds to the preview rectangle used to display the current and the previous colors.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.swallow.preview": the part where the preview object is embedded
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+group {
+   name: "etk/colorpicker/color_preview";
+   min: 40 22;
+   parts {
+      part {
+         name: "background";
+         type: IMAGE;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 2 1;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -7 -2;
+            }
+            image {
+               normal: "cp_box.png";
+               border: 2 2 3 3;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.preview";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+               to: "background";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -3;
+               to: "background";
+            }
+         }
+      }
+   }
+}
+
+
+/***********************************
+ *
+ * Additional groups
+ *
+ ***********************************/
+
+/**
+ * group "etk/colorpicker"
+ * -----------------------
+ * This group corresponds to the background object of the whole colorpicker, which contains the two pickers,
+ * the sliders and the preview rectangles.
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ *
+ * Current implementation: Not implemented in this theme
+ */

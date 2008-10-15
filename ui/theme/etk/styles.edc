@@ -1,0 +1,65 @@
+styles
+{
+   /** Style for normal labels */
+   STYLE("Default",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#3c3c3cFF", /* Normal style */
+      "color=#ffffff style=soft_shadow shadow_color=#07070720 font=Vera-Bold font_size=16", /* Title */
+      "color=#ffffff style=soft_shadow shadow_color=#07070720 font=Vera-Bold font_size=12", /* Subtitle */
+      "color=#ffffff style=glow glow2_color=#fe87 glow_color=#fa14", /* Glow */
+      "color=#111111 font=Vera-Italic") /* Description */
+   
+   /** Default style for the label of a button */
+   STYLE("Button Default",
+      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "color=#3c3c3cFF style=shadow shadow_color=#AAA8A980", /* Normal style */
+      "", "", "", "") /* Other styles */
+   
+   /** Style for the label of a pressed button */
+   STYLE("Button Pressed",
+      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "color=#3c3c3cFF style=shadow shadow_color=#AAA8A980", /* Normal style */
+      "", "", "", "") /* Other styles */
+   
+   /** Style for the label of a disabled button */
+   STYLE("Button Disabled",
+      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "color=#606060FF style=shadow shadow_color=#AAA8A980", /* Normal style */
+      "", "", "", "") /* Other styles */
+      
+   /** Style for the label of a disabled toggled button */
+   STYLE("Button Disabled Toggled",
+      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "color=#606060FF style=shadow shadow_color=#AAA8A980", /* Normal style */
+      "", "", "", "") /* Other styles */
+   
+   /** Default style for the label of a check/radio button */
+   STYLE("Check Default",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#3c3c3cFF", /* Normal style */
+      "", "", "", "") /* Other styles */
+   
+   /** Style for the label of a focused check/radio button */
+   STYLE("Check Focused",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#FFFFFFFF", /* Normal style */
+      "", "", "", "") /* Other styles */
+   
+   /** Style for the label of a disabled check/radio button */
+   STYLE("Check Disabled",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#60606080", /* Normal style */
+      "", "", "", "") /* Other styles */
+      
+   /** Default style for the text of a tree's row */
+   STYLE("Row Default",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#3c3c3cFF", /* Normal style */
+      "", "", "", "") /* Other styles */
+      
+   /** Style for the text of a selected tree's row */
+   STYLE("Row Selected",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#FFFFFFFF", /* Normal style */
+      "", "", "", "") /* Other styles */
+}

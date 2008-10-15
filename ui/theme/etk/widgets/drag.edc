@@ -1,0 +1,15 @@
+group {
+   name: "etk/drag/default";
+   min: 32 32;
+   parts {
+      part {
+         name: "icon";
+         description {
+            state: "default" 0.0;
+            image {
+               normal: "drag_default.png";
+            }
+         }
+      }
+   }
+}

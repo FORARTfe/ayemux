@@ -1,0 +1,577 @@
+/**
+ * group "etk/hscrollbar"
+ * -----------------------
+ * This group corresponds to the default look for an horizontal scrollbar. Since an horizontal scrollbar is
+ * mostly never used alone (it's almost always used with a scrolled view), this group is almost never used.
+ * The groups "etk/scrolled_view/hscrollbar" or "etk/tree/scrolled_view/hscrollbar" are more often used.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.dragable.bar": the dragable part used to scroll the content of the scrolled-view
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ *
+ * Signals to emit:
+ * ----------------
+ * - "scroll_left_start": should be emitted when the content should be
+ *      scrolled to the left (i.e. when the left arrow is pressed)
+ * - "scroll_right_start": should be emitted when the content should be
+ *      scrolled to the right (i.e. when the right arrow is pressed)
+ * - "scroll_stop": should be emitted when the content should stop being
+ *      scrolled (i.e. when the pressed arrow is released)
+ */
+group {
+   name: "etk/hscrollbar";
+   alias: "etk/scrolled_view/hscrollbar";
+   alias: "etk/tree/scrolled_view/hscrollbar";
+   alias: "etk/iconbox/scrolled_view/hscrollbar";
+   min: 68 17;
+   parts {
+      part {
+         name: "trough_left";
+         description {
+            state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: -2 -4;
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: 12 6;
+            }
+            image {
+               normal: "scrollbar_h_trough_left.png";
+            }
+         }
+      }
+      part {
+         name: "trough_right";
+         description {
+            state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -13 -4;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -1 6;
+            }
+            image {
+               normal: "scrollbar_h_trough_right.png";
+            }
+         }
+      }
+      part {
+         name: "trough";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: 0 0;
+               to: "trough_left";
+            }
+            rel2 {
+               relative: 0.0 1.0;
+               offset: -1 -1;
+               to: "trough_right";
+            }
+            image {
+               normal: "scrollbar_h_trough.png";
+               border: 6 6 8 8;
+            }
+         }
+      }
+      part {
+         name: "confine";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+            rel1 {
+               to: "trough";
+            }
+            rel2 {
+               to: "trough";
+            }
+         }
+      }
+      part {
+         name: "etk.dragable.bar";
+         dragable {
+            confine: "confine";
+            x: 1 1 1;
+            y: 0 0 0;
+         }
+         description {
+            state: "default" 0.0;
+            min: 36 13;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.5 0.5;
+               offset: 0 0;
+               to: "confine";
+            }
+            rel2 {
+               relative: 0.5 0.5;
+               offset: 0 0;
+               to: "confine";
+            }
+            image {
+               normal: "scrollbar_h_bar.png";
+               border: 6 6 6 6;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "thumb";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 11 7;
+            max: 11 7;
+            fixed: 1 1;
+            rel1 {
+               to: "etk.dragable.bar";
+            }
+            rel2 {
+               to: "etk.dragable.bar";
+            }
+            image {
+               normal: "scrollbar_h_thumb.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "arrow_left";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
+            rel1 {
+               to: "trough_left";
+            }
+            rel2 {
+               to: "trough_left";
+            }
+            image {
+               normal: "scrollbar_h_arrow_left.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "arrow_right";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
+            rel1 {
+               to: "trough_right";
+            }
+            rel2 {
+               to: "trough_right";
+            }
+            image {
+               normal: "scrollbar_h_arrow_right.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "scrollbar_bar_pressed";
+         signal: "mouse,down,1*";
+         source: "etk.dragable.bar";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "etk.dragable.bar";
+         target: "thumb";
+      }
+      program {
+         name: "scrollbar_bar_released";
+         signal: "mouse,up,1";
+         source: "etk.dragable.bar";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "etk.dragable.bar";
+         target: "thumb";
+      }
+      
+      program {
+         name: "scrollbar_arrow_left_pressed";
+         signal: "mouse,down,1*";
+         source: "trough_left";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "arrow_left";
+      }
+      program {
+         name: "scrollbar_arrow_left_released";
+         signal: "mouse,up,1";
+         source: "trough_left";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "arrow_left";
+      }
+      program {
+         name: "scrollbar_arrow_left_pressed2";
+         signal: "mouse,down,1*";
+         source: "trough_left";
+         action: SIGNAL_EMIT "scroll_left_start" "";
+      }
+      program {
+         name: "scrollbar_arrow_left_released2";
+         signal: "mouse,up,1";
+         source: "trough_left";
+         action: SIGNAL_EMIT "scroll_stop" "";
+      }
+      
+      program {
+         name: "scrollbar_arrow_right_pressed";
+         signal: "mouse,down,1*";
+         source: "trough_right";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "arrow_right";
+      }
+      program {
+         name: "scrollbar_arrow_right_released";
+         signal: "mouse,up,1";
+         source: "trough_right";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "arrow_right";
+      }
+      program {
+         name: "scrollbar_arrow_right_pressed2";
+         signal: "mouse,down,1*";
+         source: "trough_right";
+         action: SIGNAL_EMIT "scroll_right_start" "";
+      }
+      program {
+         name: "scrollbar_arrow_right_released2";
+         signal: "mouse,up,1";
+         source: "trough_right";
+         action: SIGNAL_EMIT "scroll_stop" "";
+      }
+   }
+}
+
+/**
+ * group "etk/vscrollbar"
+ * -----------------------
+ * This group corresponds to the default look for a vertical scrollbar. Since a vertical scrollbar is
+ * mostly never used alone (it's almost always used with a scrolled view), this group is almost never used.
+ * The groups "etk/scrolled_view/hscrollbar" or "etk/tree/scrolled_view/hscrollbar" are more often used.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.dragable.bar": the dragable part used to scroll the content of the scrolled-view
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ *
+ * Signals to emit:
+ * ----------------
+ * - "scroll_left_start": should be emitted when the content should be
+ *      scrolled to the left (i.e. when the left arrow is pressed)
+ * - "scroll_right_start": should be emitted when the content should be
+ *      scrolled to the right (i.e. when the right arrow is pressed)
+ * - "scroll_stop": should be emitted when the content should stop being
+ *      scrolled (i.e. when the pressed arrow is released)
+ */
+group {
+   name: "etk/vscrollbar";
+   alias: "etk/scrolled_view/vscrollbar";
+   alias: "etk/tree/scrolled_view/vscrollbar";
+   alias: "etk/iconbox/scrolled_view/vscrollbar";
+   min: 17 68;
+   parts {
+      part {
+         name: "trough_up";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.5 0.0;
+               offset: -8 0;
+            }
+            rel2 {
+               relative: 0.5 0.0;
+               offset: 8 12;
+            }
+            image {
+               normal: "scrollbar_v_trough_up.png";
+            }
+         }
+      }
+      part {
+         name: "trough_down";
+         description {
+            state: "default" 0.0;
+            min: 17 13; // silly fix for alignment
+            max: 17 13;
+            rel1 {
+               relative: 0.5 1.0;
+               offset: -8 -11;
+            }
+            rel2 {
+               relative: 0.5 1.0;
+               offset: 8 -1;
+            }
+            image {
+               normal: "scrollbar_v_trough_down.png";
+            }
+         }
+      }
+      part {
+         name: "trough";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 1.0;
+               offset: 0 0;
+               to: "trough_up";
+            }
+            rel2 {
+               relative: 1.0 0.0;
+               offset: -1 -1;
+               to: "trough_down";
+            }
+            image {
+               normal: "scrollbar_v_trough.png";
+               border: 8 8 6 6;
+            }
+         }
+      }
+      part {
+         name: "confine";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+            rel1 {
+               to: "trough";
+            }
+            rel2 {
+               to: "trough";
+            }
+         }
+      }
+      part {
+         name: "etk.dragable.bar";
+         dragable {
+            confine: "confine";
+            x: 0 0 0;
+            y: 1 1 1;
+         }
+         description {
+            state: "default" 0.0;
+            min: 13 36;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.5 0.5;
+               offset: 0 0;
+               to: "confine";
+            }
+            rel2 {
+               relative: 0.5 0.5;
+               offset: 0 0;
+               to: "confine";
+            }
+            image {
+               normal: "scrollbar_v_bar.png";
+               border: 6 6 6 6;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "thumb";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 7 11;
+            max: 7 11;
+            fixed: 1 1;
+            rel1 {
+               to: "etk.dragable.bar";
+            }
+            rel2 {
+               to: "etk.dragable.bar";
+            }
+            image {
+               normal: "scrollbar_v_thumb.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "arrow_up";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 17 13;
+            max: 17 13;
+            rel1 {
+               to: "trough_up";
+            }
+            rel2 {
+               to: "trough_up";
+            }
+            image {
+               normal: "scrollbar_v_arrow_up.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+      part {
+         name: "arrow_down";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 17 13;
+            max: 17 13;
+            rel1 {
+               to: "trough_down";
+            }
+            rel2 {
+               to: "trough_down";
+            }
+            image {
+               normal: "scrollbar_v_arrow_down.png";
+            }
+         }
+         description {
+            state: "down" 0.0;
+            inherit: "default" 0.0;
+            color: 215 215 215 255;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "scrollbar_bar_pressed";
+         signal: "mouse,down,1*";
+         source: "etk.dragable.bar";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "etk.dragable.bar";
+         target: "thumb";
+      }
+      program {
+         name: "scrollbar_bar_released";
+         signal: "mouse,up,1";
+         source: "etk.dragable.bar";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "etk.dragable.bar";
+         target: "thumb";
+      }
+      
+      program {
+         name: "scrollbar_arrow_up_pressed";
+         signal: "mouse,down,1*";
+         source: "trough_up";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "arrow_up";
+      }
+      program {
+         name: "scrollbar_arrow_up_released";
+         signal: "mouse,up,1";
+         source: "trough_up";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "arrow_up";
+      }
+      program {
+         name: "scrollbar_arrow_up_pressed2";
+         signal: "mouse,down,1*";
+         source: "trough_up";
+         action: SIGNAL_EMIT "scroll_up_start" "";
+      }
+      program {
+         name: "scrollbar_arrow_up_released2";
+         signal: "mouse,up,1";
+         source: "trough_up";
+         action: SIGNAL_EMIT "scroll_stop" "";
+      }
+      
+      program {
+         name: "scrollbar_arrow_down_pressed";
+         signal: "mouse,down,1*";
+         source: "trough_down";
+         action: STATE_SET "down" 0.0;
+         transition: DECELERATE 0.15;
+         target: "arrow_down";
+      }
+      program {
+         name: "scrollbar_arrow_down_released";
+         signal: "mouse,up,1";
+         source: "trough_down";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "arrow_down";
+      }
+      program {
+         name: "scrollbar_arrow_down_pressed2";
+         signal: "mouse,down,1*";
+         source: "trough_down";
+         action: SIGNAL_EMIT "scroll_down_start" "";
+      }
+      program {
+         name: "scrollbar_arrow_down_released2";
+         signal: "mouse,up,1";
+         source: "trough_down";
+         action: SIGNAL_EMIT "scroll_stop" "";
+      }
+   }
+}

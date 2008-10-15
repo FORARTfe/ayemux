@@ -1,0 +1,71 @@
+group {
+   name: "etk/text_view";
+   min: 120 18;
+   data {
+      item: "inset" "6 6 6 6";
+   }
+   parts {
+      part {
+         name: "text_view_bg";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image {
+               normal: "entry.png";
+               border: 5 5 8 6;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "focused" 0.0;
+	    inherit: "default" 0.0;
+            image {
+               normal: "entry_focus.png";
+               border: 9 9 9 9;
+            }
+	 }
+      }
+      /*part {
+         name: "text_area";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 4 3;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -5 -3;
+            }
+         }
+      }*/
+   }
+   programs {
+      program {
+         name: "text_view_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "focused" 0.0;
+         transition: DECELERATE 0.2;
+         target: "text_view_bg";
+      }
+      program {
+         name: "text_view_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.2;
+         target: "text_view_bg";
+      }
+   }
+}

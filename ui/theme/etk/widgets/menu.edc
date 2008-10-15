@@ -1,0 +1,396 @@
+group {
+   name: "etk/menu";
+   data {
+      item: "inset" "3 3 3 3";
+   }
+   parts {
+      part {
+         name: "border";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 104 108 111 255;
+         }
+      }
+      part {
+         name: "background";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -2;
+            }
+            image {
+               normal: "menu_bg.png";
+               border: 2 2 4 4;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}
+
+
+group {
+   name: "etk/menu/separator";
+   min: 0 5;
+   parts {
+      part {
+         name: "separator";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: -2 0;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: 1 2;
+            }
+            image {
+               normal: "menu_separator.png";
+               border: 2 2 1 1;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}
+
+
+group {
+   name: "etk/menu/menu_item";
+   /* TODO: temporary until we implement name: "etk/menu_bar/menu_item" */
+   alias: "etk/menu_bar/menu_item";
+   min: 0 21;
+   max: 9999 21; // not sure this is such a good idea
+   parts {
+      part {
+         name: "item_rect";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+         }
+      }
+      part {
+         name: "highlight";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            visible: 0;
+            image {
+               normal: "menu_item_select.png";
+               border: 5 5 5 5;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+         }
+      }
+      part {
+         name: "etk.swallow.left_widget";
+         type: SWALLOW;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            visible: 0;
+            fixed: 1 1;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 0.0 1.0;
+               offset: 0 -1;
+            }
+         }
+         description {
+            state: "visible" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+            rel1 {
+               relative: 0.0 0.5;
+               offset: 3 -8;
+            }
+            rel2 {
+               relative: 0.0 0.5;
+               offset: 18 7;
+            }
+         }
+      }
+      part {
+         name: "arrow_clip";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            visible: 0;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: -3 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -3 -1;
+            }
+         }
+         description {
+            state: "visible" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: -12 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -3 -1;
+            }
+         }
+         description {
+            state: "spacer" 0.0;
+            inherit: "visible" 0.0;
+            visible: 0;
+         }
+      }
+      part {
+         name: "arrow";
+         clip_to: "arrow_clip";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 10 11;
+            max: 10 11;
+            align: 1.0 0.5;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -3 0;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -3 0;
+            }
+            image {
+               normal: "menu_item_arrow_dark.png";
+            }
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "menu_item_arrow_light.png";
+            }
+	 }
+      }
+      part {
+         name: "etk.text.label";
+         type: TEXT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 60 60 60 255;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: 5 6;
+               to_x: "etk.swallow.left_widget";
+            }
+            rel2 {
+               relative: 0.0 1.0;
+               offset: -6 -4;
+               to_x: "arrow_clip";
+            }
+            text {
+               text: "Label";
+               font: "Vera-Bold";
+               size:  10;
+               min: 1 1;
+               align: 0.0 0.5;
+            }
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "item_select";
+         signal: "etk,state,selected";
+         source: "etk";
+         action: STATE_SET "selected" 0.0;
+         target: "highlight";
+         target: "etk.text.label";
+         target: "arrow";
+      }
+      program {
+         name: "item_unselect";
+         signal: "etk,state,unselected";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "highlight";
+         target: "etk.text.label";
+         target: "arrow";
+      }
+      program {
+         name: "item_left_widget_show";
+         signal: "etk,action,show,left_widget";
+         source: "etk";
+         action: STATE_SET "visible" 0.0;
+         target: "etk.swallow.left_widget";
+      }
+      program {
+         name: "item_left_widget_hide";
+         signal: "etk,action,hide,left_widget";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.swallow.left_widget";
+      }
+      program {
+         name: "item_arrow_show";
+         signal: "etk,action,show,arrow";
+         source: "etk";
+         action: STATE_SET "visible" 0.0;
+         target: "arrow_clip";
+      }
+      program {
+         name: "item_arrow_space_show";
+         signal: "etk,action,show,arrow_space";
+         source: "etk";
+         action: STATE_SET "spacer" 0.0;
+         target: "arrow_clip";
+      }
+      program {
+         name: "item_arrow_hide";
+         signal: "etk,action,hide,arrow";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "arrow_clip";
+      }
+   }
+}
+
+
+group {
+   name: "etk/menu/menu_item/checkbox";
+   parts {
+      part {
+         name: "check";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 20 18;
+            max: 20 18;
+            image {
+               normal: "check0.png";
+            }
+         }
+         description {
+            state: "checked" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "check1.png";
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "menu_check_activate";
+         signal: "etk,state,on";
+         source: "etk";
+         action: STATE_SET "checked" 0.0;
+         target: "check";
+      }
+      program {
+         name: "menu_check_deactivate";
+         signal: "etk,state,off";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "check";
+      }
+   }
+}
+
+
+group {
+   name: "etk/menu/menu_item/radiobox";
+   parts {
+      part {
+         name: "base";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 20 18;
+            max: 20 18;
+            image {
+               normal: "radio0.png";
+            }
+         }
+      }
+      part {
+         name: "radio";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 20 18;
+            max: 20 18;
+	    visible: 0;
+            image {
+               normal: "radio1.png";
+            }
+         }
+         description {
+            state: "on" 0.0;
+            inherit: "default" 0.0;
+	    visible: 1;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "menu_radio_activate";
+         signal: "etk,state,on";
+         source: "etk";
+         action: STATE_SET "on" 0.0;
+         target: "radio";
+      }
+      program {
+         name: "menu_radio_deactivate";
+         signal: "etk,state,off";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "radio";
+      }
+   }
+}
+
+
+/* TODO:
+group {
+   name: "etk/menu_bar";
+}
+
+
+group {
+   name: "etk/menu_bar/menu_item";
+}*/
+

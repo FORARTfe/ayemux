@@ -1,0 +1,16 @@
+images {
+	image: "patch_back.png" COMP;
+	image: "rack_back.png" COMP;
+	image: "rack_blank.png" COMP;
+	image: "rack_top.png" COMP;
+	image: "rack_bottom.png" COMP;
+	image: "rack_toggle_control_bypass.png" COMP;
+	image: "rack_toggle_control_on.png" COMP;
+	image: "rack_range_control.png" COMP;
+	image: "rack_range_control_dial.png" COMP;
+	image: "rack_delete.png" COMP;
+	image: "rack_delete_over.png" COMP;
+	image: "rack_range_control_midi.png" COMP;
+	image: "rack_integer_control_button.png" COMP;
+	image: "rack_integer_control_button_down.png" COMP;
+}

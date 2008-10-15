@@ -1,0 +1,60 @@
+Amp.o: Amp.cc basics.h ladspa.h Amp.h dsp/util.h dsp/OnePole.h \
+  dsp/BiQuad.h dsp/TwelveAX7.h dsp/r12ax7.h dsp/Roessler.h dsp/FIR.h \
+  dsp/util.h dsp/sinc.h dsp/Sine.h dsp/windows.h dsp/RBJ.h dsp/Eq.h \
+  dsp/ToneStack.h dsp/windows.h dsp/TDFII.h dsp/LatFilt.h \
+  dsp/tonestack/tables.h Descriptor.h
+Cabinet.o: Cabinet.cc basics.h ladspa.h Cabinet.h dsp/util.h Descriptor.h \
+  Cabinet-Models32.h
+Chorus.o: Chorus.cc basics.h ladspa.h Chorus.h dsp/Sine.h dsp/Roessler.h \
+  dsp/Lorenz.h dsp/Delay.h dsp/util.h dsp/FPTruncateMode.h dsp/OnePole.h \
+  dsp/BiQuad.h dsp/RBJ.h Descriptor.h
+Click.o: Click.cc basics.h ladspa.h waves/click.h waves/money.h Click.h \
+  dsp/OnePole.h dsp/util.h Descriptor.h
+Clip.o: Clip.cc basics.h ladspa.h Clip.h dsp/util.h dsp/FIR.h dsp/util.h \
+  dsp/sinc.h dsp/Sine.h dsp/windows.h Descriptor.h
+Compress.o: Compress.cc basics.h ladspa.h Compress.h dsp/RMS.h dsp/util.h \
+  Descriptor.h
+Eq.o: Eq.cc basics.h ladspa.h Eq.h dsp/util.h dsp/Eq.h dsp/BiQuad.h \
+  dsp/RBJ.h Descriptor.h
+HRTF.o: HRTF.cc basics.h ladspa.h HRTF.h dsp/util.h Descriptor.h elev0.h
+interface.o: interface.cc basics.h ladspa.h Cabinet.h dsp/util.h Chorus.h \
+  dsp/Sine.h dsp/Roessler.h dsp/Lorenz.h dsp/Delay.h dsp/util.h \
+  dsp/FPTruncateMode.h dsp/OnePole.h dsp/BiQuad.h dsp/RBJ.h Phaser.h \
+  Sin.h Lorenz.h Roessler.h Reverb.h Compress.h dsp/RMS.h Click.h Eq.h \
+  dsp/Eq.h Clip.h dsp/FIR.h dsp/sinc.h dsp/Sine.h dsp/windows.h White.h \
+  dsp/White.h SweepVF.h dsp/SVF.h VCO.h dsp/VCO.h Amp.h dsp/TwelveAX7.h \
+  dsp/r12ax7.h dsp/ToneStack.h dsp/windows.h dsp/TDFII.h dsp/LatFilt.h \
+  dsp/tonestack/tables.h HRTF.h Pan.h Scape.h ToneStack.h Descriptor.h
+Lorenz.o: Lorenz.cc basics.h ladspa.h Lorenz.h dsp/Lorenz.h Descriptor.h
+Pan.o: Pan.cc basics.h ladspa.h Pan.h dsp/Delay.h dsp/util.h \
+  dsp/FPTruncateMode.h dsp/OnePole.h Descriptor.h
+Phaser.o: Phaser.cc basics.h ladspa.h Phaser.h dsp/Sine.h dsp/Lorenz.h \
+  dsp/Delay.h dsp/util.h dsp/FPTruncateMode.h Descriptor.h
+Preamp.o: Preamp.cc basics.h ladspa.h Amp.h dsp/util.h dsp/OnePole.h \
+  dsp/BiQuad.h dsp/TwelveAX7.h dsp/r12ax7.h dsp/Roessler.h dsp/FIR.h \
+  dsp/util.h dsp/sinc.h dsp/Sine.h dsp/windows.h dsp/RBJ.h dsp/Eq.h \
+  dsp/ToneStack.h dsp/windows.h dsp/TDFII.h dsp/LatFilt.h \
+  dsp/tonestack/tables.h Descriptor.h
+Reverb.o: Reverb.cc basics.h ladspa.h Reverb.h dsp/Delay.h dsp/util.h \
+  dsp/FPTruncateMode.h dsp/OnePole.h dsp/Sine.h dsp/util.h Descriptor.h
+Roessler.o: Roessler.cc basics.h ladspa.h Roessler.h dsp/Roessler.h \
+  Descriptor.h
+Scape.o: Scape.cc basics.h ladspa.h Scape.h dsp/Sine.h dsp/Roessler.h \
+  dsp/Lorenz.h dsp/Delay.h dsp/util.h dsp/FPTruncateMode.h dsp/OnePole.h \
+  dsp/BiQuad.h dsp/RBJ.h dsp/SVF.h Descriptor.h
+Sin.o: Sin.cc basics.h ladspa.h Sin.h dsp/Sine.h Descriptor.h
+SweepVF.o: SweepVF.cc basics.h ladspa.h SweepVF.h dsp/SVF.h dsp/Lorenz.h \
+  dsp/Roessler.h dsp/RMS.h dsp/BiQuad.h dsp/OnePole.h Descriptor.h \
+  dsp/RBJ.h
+ToneControls.o: ToneControls.cc basics.h ladspa.h Amp.h dsp/util.h \
+  dsp/OnePole.h dsp/BiQuad.h dsp/TwelveAX7.h dsp/r12ax7.h dsp/Roessler.h \
+  dsp/FIR.h dsp/util.h dsp/sinc.h dsp/Sine.h dsp/windows.h dsp/RBJ.h \
+  dsp/Eq.h dsp/ToneStack.h dsp/windows.h dsp/TDFII.h dsp/LatFilt.h \
+  dsp/tonestack/tables.h
+ToneStack.o: ToneStack.cc basics.h ladspa.h ToneStack.h dsp/util.h \
+  dsp/windows.h dsp/ToneStack.h dsp/util.h dsp/windows.h dsp/TDFII.h \
+  dsp/LatFilt.h dsp/tonestack/tables.h Descriptor.h \
+  dsp/tonestack/ks_tab.h dsp/tonestack/vs_tab.h
+VCO.o: VCO.cc basics.h ladspa.h VCO.h dsp/util.h dsp/VCO.h dsp/FIR.h \
+  dsp/util.h dsp/sinc.h dsp/Sine.h dsp/windows.h Descriptor.h
+White.o: White.cc basics.h ladspa.h White.h dsp/White.h Descriptor.h
