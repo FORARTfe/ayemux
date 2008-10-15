@@ -1,0 +1,52 @@
+//~ #include "macros/paned.edc"
+#include "macros/style.edc"
+#include "macros/tree_header.edc"
+#include "macros/toolbar.edc"
+
+/* (see AUTHORS)
+ * detour for the Enlightened Toolkit Library
+ */
+
+#define version 0.4.0
+
+fonts {
+   font: "Vera.ttf" "Vera";
+   font: "VeraBd.ttf" "Vera-Bold";
+   font: "VeraIt.ttf" "Vera-Italic";
+   font: "VeraBI.ttf" "Vera-Bold-Italic";
+   font: "VeraMono.ttf" "Vera-Mono";
+   font: "VeraMoBd.ttf" "Vera-Mono-Bold";
+}
+
+#include "images/images.edc"
+#include "colors.edc"
+#include "styles.edc"
+
+collections {
+   #include "widgets/windows.edc"
+   #include "widgets/button.edc"
+   #include "widgets/toggle_button.edc"
+   #include "widgets/check_button.edc"
+   #include "widgets/radio_button.edc"
+   #include "widgets/entry.edc"
+   #include "widgets/text_view.edc"
+   #include "widgets/slider.edc"
+   #include "widgets/spinner.edc"
+   #include "widgets/scrollbar.edc"
+   #include "widgets/tree.edc"
+   #include "widgets/separator.edc"
+   #include "widgets/paned.edc"
+   #include "widgets/frame.edc"
+   #include "widgets/menu.edc"
+   #include "widgets/statusbar.edc"
+   #include "widgets/notebook.edc"
+   #include "widgets/progress_bar.edc"
+   #include "widgets/combobox.edc"
+   //~ #include "widgets/tooltips.edc"
+   #include "widgets/iconbox.edc"
+   #include "widgets/colorpicker.edc"
+   #include "widgets/toolbar.edc"
+   #include "widgets/label.edc"
+   #include "widgets/drag.edc"
+   #include "widgets/combobox_entry.edc"
+}

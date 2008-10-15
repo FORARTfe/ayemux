@@ -1,0 +1,13 @@
+
+Use the following command check out the latest source code:
+
+svn checkout http://detour.googlecode.com/svn/branches/etk
+
+COMPILING and INSTALLING:
+
+To compile and install:
+	make
+
+To uninstall:
+	make uninstall
+

@@ -1,0 +1,43 @@
+group {
+   name: "etk/htoolbar";
+   data {   
+      item: "inset" "1 1 2 2";
+   }   
+   parts {
+      part {
+	 name: "toolbar";
+	 description {
+	    state: "default" 0.0;
+	    rel1 {
+	       relative: 0.0 0.0;
+	       offset: 0 0;
+	    }
+	    rel2 {
+	       relative: 1.0 1.0;
+	       offset: -1 -1;
+	    }
+	    image {
+	       normal: "progress_trough.png";
+	       border: 2 2 2 2;
+	    }
+	    fill {
+	       smooth: 0;
+	    }
+	 }
+      }
+   }
+}
+
+
+group {
+   name: "etk/htoolbar/tool_button";
+   alias: "etk/tool_button";
+   TOOL_BUTTON_GROUP(0, 0, -1, -1)
+}
+
+group {
+   name: "etk/vtoolbar/tool_button";
+   TOOL_BUTTON_GROUP(-4, 0, 1, -1)
+}
+
+

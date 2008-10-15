@@ -1,0 +1,1336 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+A	dsp/RBJ.h	/^		double A, beta;$/;"	m	class:DSP::RBJ::PeakShelve
+AUDIO	basics.h	69;"	d
+AmpIII	Amp.h	/^class AmpIII$/;"	c
+AmpIV	Amp.h	/^class AmpIV$/;"	c
+AmpStub	Amp.h	/^		AmpStub()$/;"	f	class:AmpStub
+AmpStub	Amp.h	/^class AmpStub$/;"	c
+AmpV	Amp.h	/^class AmpV$/;"	c
+AmpVTS	Amp.h	/^class AmpVTS$/;"	c
+AutoWah	SweepVF.h	/^class AutoWah$/;"	c
+BIT	dsp/White.h	59;"	d
+BIT	dsp/White.h	64;"	d
+BIT	dsp/White.h	71;"	d
+BIT	dsp/White.h	76;"	d
+BLOCK_SIZE	SweepVF.h	/^			BLOCK_SIZE = 32$/;"	e	enum:AutoWah::__anon21
+BLOCK_SIZE	SweepVF.h	/^			BLOCK_SIZE = 32$/;"	e	enum:SweepVFI::__anon19
+BLOCK_SIZE	SweepVF.h	/^			BLOCK_SIZE = 32$/;"	e	enum:SweepVFII::__anon20
+BOUNDED	basics.h	51;"	d
+BP	dsp/RBJ.h	/^		BP (double f, double Q, T * ca, T * cb)$/;"	f	class:DSP::RBJ::BP
+BP	dsp/RBJ.h	/^class BP$/;"	c	namespace:DSP::RBJ
+Band	dsp/SVF.h	/^			Band = 1,$/;"	e	enum:DSP::SVF::__anon25
+BiQuad	dsp/BiQuad.h	/^		BiQuad()$/;"	f	class:DSP::BiQuad
+BiQuad	dsp/BiQuad.h	/^class BiQuad$/;"	c	namespace:DSP
+BlockSize	Eq.h	/^			enum { BlockSize = 64 };$/;"	e	enum:Eq::__anon13
+C1	dsp/ToneStack.h	/^	double C1, C2, C3;$/;"	m	struct:DSP::__anon26
+C2	dsp/ToneStack.h	/^	double C1, C2, C3;$/;"	m	struct:DSP::__anon26
+C3	dsp/ToneStack.h	/^	double C1, C2, C3;$/;"	m	struct:DSP::__anon26
+CAPS	basics.h	167;"	d
+CEO	Click.h	/^class CEO$/;"	c
+CONTROL	basics.h	70;"	d
+CabinetI	Cabinet.h	/^class CabinetI$/;"	c
+CabinetII	Cabinet.h	/^class CabinetII$/;"	c
+ChorusI	Chorus.h	/^class ChorusI$/;"	c
+ChorusII	Chorus.h	/^class ChorusII$/;"	c
+ChorusStub	Chorus.h	/^class ChorusStub$/;"	c
+Click	Click.h	/^class Click$/;"	c
+ClickStub	Click.h	/^class ClickStub$/;"	c
+Clip	Clip.h	/^		Clip()$/;"	f	class:Clip
+Clip	Clip.h	/^class Clip$/;"	c
+Compress	Compress.h	/^class Compress$/;"	c
+Copyright	ladspa.h	/^  const char * Copyright;$/;"	m	struct:_LADSPA_Descriptor
+DEFAULT_0	basics.h	57;"	d
+DEFAULT_1	basics.h	58;"	d
+DEFAULT_100	basics.h	59;"	d
+DEFAULT_440	basics.h	60;"	d
+DEFAULT_HIGH	basics.h	64;"	d
+DEFAULT_LOW	basics.h	62;"	d
+DEFAULT_MAX	basics.h	65;"	d
+DEFAULT_MID	basics.h	63;"	d
+DEFAULT_MIN	basics.h	61;"	d
+DSP	dsp/BiQuad.h	/^namespace DSP {$/;"	n
+DSP	dsp/Delay.h	/^namespace DSP {$/;"	n
+DSP	dsp/Eq.h	/^namespace DSP {$/;"	n
+DSP	dsp/FIR.h	/^namespace DSP {$/;"	n
+DSP	dsp/FPTruncateMode.h	/^namespace DSP {$/;"	n
+DSP	dsp/LatFilt.h	/^namespace DSP {$/;"	n
+DSP	dsp/Lorenz.h	/^namespace DSP {$/;"	n
+DSP	dsp/OnePole.h	/^namespace DSP {$/;"	n
+DSP	dsp/RBJ.h	/^namespace DSP { $/;"	n
+DSP	dsp/RMS.h	/^namespace DSP {$/;"	n
+DSP	dsp/Roessler.h	/^namespace DSP {$/;"	n
+DSP	dsp/SVF.h	/^namespace DSP {$/;"	n
+DSP	dsp/Sine.h	/^namespace DSP {$/;"	n
+DSP	dsp/TDFII.h	/^namespace DSP {$/;"	n
+DSP	dsp/ToneStack.h	/^namespace DSP {$/;"	n
+DSP	dsp/TwelveAX7.h	/^namespace DSP {$/;"	n
+DSP	dsp/VCO.h	/^namespace DSP {$/;"	n
+DSP	dsp/White.h	/^namespace DSP {$/;"	n
+DSP	dsp/sinc.h	/^namespace DSP {$/;"	n
+DSP	dsp/tonestack/ks_tab.h	/^namespace DSP {$/;"	n
+DSP	dsp/tonestack/tables.h	/^namespace DSP {$/;"	n
+DSP	dsp/tonestack/vs_tab.h	/^namespace DSP {$/;"	n
+DSP	dsp/util.h	/^namespace DSP {$/;"	n
+DSP	dsp/windows.h	/^namespace DSP {$/;"	n
+Delay	dsp/Delay.h	/^		Delay()$/;"	f	class:DSP::Delay
+Delay	dsp/Delay.h	/^class Delay$/;"	c	namespace:DSP
+DelayTapA	dsp/Delay.h	/^		DelayTapA()$/;"	f	class:DSP::DelayTapA
+DelayTapA	dsp/Delay.h	/^class DelayTapA$/;"	c	namespace:DSP
+Descriptor	Descriptor.h	/^		Descriptor() { setup(); }$/;"	f	class:Descriptor
+Descriptor	Descriptor.h	/^class Descriptor$/;"	c
+DescriptorStub	Descriptor.h	/^		DescriptorStub()$/;"	f	class:DescriptorStub
+DescriptorStub	Descriptor.h	/^class DescriptorStub$/;"	c
+Dirac	Click.h	/^class Dirac$/;"	c
+Eq	Eq.h	/^class Eq$/;"	c
+Eq	dsp/Eq.h	/^		Eq()$/;"	f	class:DSP::Eq
+Eq	dsp/Eq.h	/^class Eq$/;"	c	namespace:DSP
+Eq2x2	Eq.h	/^class Eq2x2$/;"	c
+FIR	dsp/FIR.h	/^		FIR (FIR & fir)$/;"	f	class:DSP::FIR
+FIR	dsp/FIR.h	/^		FIR (int N)$/;"	f	class:DSP::FIR
+FIR	dsp/FIR.h	/^		FIR (int n, d_sample * kernel)$/;"	f	class:DSP::FIR
+FIR	dsp/FIR.h	/^class FIR$/;"	c	namespace:DSP
+FIRUpsampler	dsp/FIR.h	/^		FIRUpsampler (FIR & fir, int _over)$/;"	f	class:DSP::FIRUpsampler
+FIRUpsampler	dsp/FIR.h	/^		FIRUpsampler (int _n, int _over)$/;"	f	class:DSP::FIRUpsampler
+FIRUpsampler	dsp/FIR.h	/^class FIRUpsampler$/;"	c	namespace:DSP
+FIR_SIZE	Amp.h	/^			FIR_SIZE = 64,$/;"	e	enum:AmpStub::__anon2
+FIR_SIZE	Clip.h	/^			FIR_SIZE = 64,$/;"	e	enum:Clip::__anon10
+FIR_SIZE	VCO.h	/^			FIR_SIZE = 64, $/;"	e	enum:VCOd::__anon23
+FIR_SIZE	VCO.h	/^			FIR_SIZE = 64, $/;"	e	enum:VCOs::__anon22
+FPTruncateMode	dsp/FPTruncateMode.h	/^		FPTruncateMode()$/;"	f	class:DSP::FPTruncateMode
+FPTruncateMode	dsp/FPTruncateMode.h	/^class FPTruncateMode$/;"	c	namespace:DSP
+FRACTAL_RATE	Chorus.h	146;"	d
+FracTap	Chorus.h	/^class FracTap $/;"	c
+HARD_RT	basics.h	72;"	d
+HP	dsp/RBJ.h	/^		HP (double f, double Q, T * ca, T * cb)$/;"	f	class:DSP::RBJ::HP
+HP	dsp/RBJ.h	/^class HP$/;"	c	namespace:DSP::RBJ
+HRTF	HRTF.h	/^class HRTF$/;"	c
+HiShelve	dsp/RBJ.h	/^		HiShelve (double f, double Q, double dB, T * ca, T * cb)$/;"	f	class:DSP::RBJ::HiShelve
+HiShelve	dsp/RBJ.h	/^class HiShelve$/;"	c	namespace:DSP::RBJ
+High	dsp/SVF.h	/^			High = 2$/;"	e	enum:DSP::SVF::__anon25
+HintDescriptor	ladspa.h	/^  LADSPA_PortRangeHintDescriptor HintDescriptor;$/;"	m	struct:_LADSPA_PortRangeHint
+I	dsp/Lorenz.h	/^		int I;$/;"	m	class:DSP::Lorenz
+I	dsp/Roessler.h	/^		int I;$/;"	m	class:DSP::Roessler
+INPUT	basics.h	67;"	d
+INTEGER	basics.h	52;"	d
+ImplementationData	ladspa.h	/^  void * ImplementationData;$/;"	m	struct:_LADSPA_Descriptor
+JVComb	Reverb.h	/^class JVComb$/;"	c
+JVRev	Reverb.h	/^class JVRev$/;"	c
+L	Reverb.cc	204;"	d	file:
+L	Reverb.cc	234;"	d	file:
+LADSPA_Data	ladspa.h	/^typedef float LADSPA_Data;$/;"	t
+LADSPA_Descriptor	ladspa.h	/^} LADSPA_Descriptor;$/;"	t	typeref:struct:_LADSPA_Descriptor
+LADSPA_Descriptor_Function	ladspa.h	/^(*LADSPA_Descriptor_Function)(unsigned long Index);$/;"	t
+LADSPA_HINT_BOUNDED_ABOVE	ladspa.h	212;"	d
+LADSPA_HINT_BOUNDED_BELOW	ladspa.h	204;"	d
+LADSPA_HINT_DEFAULT_0	ladspa.h	291;"	d
+LADSPA_HINT_DEFAULT_1	ladspa.h	296;"	d
+LADSPA_HINT_DEFAULT_100	ladspa.h	299;"	d
+LADSPA_HINT_DEFAULT_440	ladspa.h	304;"	d
+LADSPA_HINT_DEFAULT_HIGH	ladspa.h	282;"	d
+LADSPA_HINT_DEFAULT_LOW	ladspa.h	268;"	d
+LADSPA_HINT_DEFAULT_MASK	ladspa.h	254;"	d
+LADSPA_HINT_DEFAULT_MAXIMUM	ladspa.h	286;"	d
+LADSPA_HINT_DEFAULT_MIDDLE	ladspa.h	275;"	d
+LADSPA_HINT_DEFAULT_MINIMUM	ladspa.h	261;"	d
+LADSPA_HINT_DEFAULT_NONE	ladspa.h	257;"	d
+LADSPA_HINT_INTEGER	ladspa.h	241;"	d
+LADSPA_HINT_LOGARITHMIC	ladspa.h	233;"	d
+LADSPA_HINT_SAMPLE_RATE	ladspa.h	228;"	d
+LADSPA_HINT_TOGGLED	ladspa.h	220;"	d
+LADSPA_Handle	ladspa.h	/^typedef void * LADSPA_Handle;$/;"	t
+LADSPA_INCLUDED	ladspa.h	23;"	d
+LADSPA_IS_HARD_RT_CAPABLE	ladspa.h	132;"	d
+LADSPA_IS_HINT_BOUNDED_ABOVE	ladspa.h	307;"	d
+LADSPA_IS_HINT_BOUNDED_BELOW	ladspa.h	306;"	d
+LADSPA_IS_HINT_DEFAULT_0	ladspa.h	324;"	d
+LADSPA_IS_HINT_DEFAULT_1	ladspa.h	326;"	d
+LADSPA_IS_HINT_DEFAULT_100	ladspa.h	328;"	d
+LADSPA_IS_HINT_DEFAULT_440	ladspa.h	330;"	d
+LADSPA_IS_HINT_DEFAULT_HIGH	ladspa.h	320;"	d
+LADSPA_IS_HINT_DEFAULT_LOW	ladspa.h	316;"	d
+LADSPA_IS_HINT_DEFAULT_MAXIMUM	ladspa.h	322;"	d
+LADSPA_IS_HINT_DEFAULT_MIDDLE	ladspa.h	318;"	d
+LADSPA_IS_HINT_DEFAULT_MINIMUM	ladspa.h	314;"	d
+LADSPA_IS_HINT_HAS_DEFAULT	ladspa.h	313;"	d
+LADSPA_IS_HINT_INTEGER	ladspa.h	311;"	d
+LADSPA_IS_HINT_LOGARITHMIC	ladspa.h	310;"	d
+LADSPA_IS_HINT_SAMPLE_RATE	ladspa.h	309;"	d
+LADSPA_IS_HINT_TOGGLED	ladspa.h	308;"	d
+LADSPA_IS_INPLACE_BROKEN	ladspa.h	131;"	d
+LADSPA_IS_PORT_AUDIO	ladspa.h	167;"	d
+LADSPA_IS_PORT_CONTROL	ladspa.h	166;"	d
+LADSPA_IS_PORT_INPUT	ladspa.h	164;"	d
+LADSPA_IS_PORT_OUTPUT	ladspa.h	165;"	d
+LADSPA_IS_REALTIME	ladspa.h	130;"	d
+LADSPA_PORT_AUDIO	ladspa.h	162;"	d
+LADSPA_PORT_CONTROL	ladspa.h	158;"	d
+LADSPA_PORT_INPUT	ladspa.h	151;"	d
+LADSPA_PORT_OUTPUT	ladspa.h	154;"	d
+LADSPA_PROPERTY_HARD_RT_CAPABLE	ladspa.h	128;"	d
+LADSPA_PROPERTY_INPLACE_BROKEN	ladspa.h	102;"	d
+LADSPA_PROPERTY_REALTIME	ladspa.h	95;"	d
+LADSPA_PortDescriptor	ladspa.h	/^typedef int LADSPA_PortDescriptor;$/;"	t
+LADSPA_PortRangeHint	ladspa.h	/^} LADSPA_PortRangeHint;$/;"	t	typeref:struct:_LADSPA_PortRangeHint
+LADSPA_PortRangeHintDescriptor	ladspa.h	/^typedef int LADSPA_PortRangeHintDescriptor;$/;"	t
+LADSPA_Properties	ladspa.h	/^typedef int LADSPA_Properties;$/;"	t
+LENGTH	Click.cc	118;"	d	file:
+LOG	basics.h	54;"	d
+LP	dsp/RBJ.h	/^		LP (double f, double Q, T * ca, T * cb)$/;"	f	class:DSP::RBJ::LP
+LP	dsp/RBJ.h	/^class LP$/;"	c	namespace:DSP::RBJ
+Label	ladspa.h	/^  const char * Label;$/;"	m	struct:_LADSPA_Descriptor
+LatFilt	dsp/LatFilt.h	/^class LatFilt$/;"	c	namespace:DSP
+Lattice	Reverb.h	/^class Lattice$/;"	c
+LoShelve	dsp/RBJ.h	/^		LoShelve (double f, double Q, double dB, T * ca, T * cb)$/;"	f	class:DSP::RBJ::LoShelve
+LoShelve	dsp/RBJ.h	/^class LoShelve$/;"	c	namespace:DSP::RBJ
+Lorenz	Lorenz.h	/^class Lorenz$/;"	c
+Lorenz	dsp/Lorenz.h	/^		Lorenz()$/;"	f	class:DSP::Lorenz
+Lorenz	dsp/Lorenz.h	/^class Lorenz$/;"	c	namespace:DSP
+Low	dsp/SVF.h	/^			Low = 0,$/;"	e	enum:DSP::SVF::__anon25
+LowerBound	ladspa.h	/^  LADSPA_Data LowerBound;$/;"	m	struct:_LADSPA_PortRangeHint
+M	ToneStack.cc	40;"	d	file:
+M	ToneStack.cc	62;"	d	file:
+MAX_WATTS	Amp.cc	361;"	d	file:
+MIN_GAIN	basics.h	76;"	d
+Maker	ladspa.h	/^  const char * Maker;$/;"	m	struct:_LADSPA_Descriptor
+ModLattice	Reverb.h	/^class ModLattice$/;"	c
+Model16	Cabinet.h	/^} Model16;$/;"	t	typeref:struct:__anon5
+Model32	Cabinet.h	/^} Model32;$/;"	t	typeref:struct:__anon6
+N	Click.h	/^		int N; \/* number of samples in wave *\/$/;"	m	class:ClickStub
+N	interface.cc	54;"	d	file:
+NOISE_FLOOR	basics.h	77;"	d
+Name	ladspa.h	/^  const char * Name;$/;"	m	struct:_LADSPA_Descriptor
+NoTwelveAX7	dsp/TwelveAX7.h	/^		NoTwelveAX7()$/;"	f	class:DSP::NoTwelveAX7
+NoTwelveAX7	dsp/TwelveAX7.h	/^class NoTwelveAX7$/;"	c	namespace:DSP
+Notch	dsp/RBJ.h	/^		Notch (double f, double Q, T * ca, T * cb)$/;"	f	class:DSP::RBJ::Notch
+Notch	dsp/RBJ.h	/^class Notch$/;"	c	namespace:DSP::RBJ
+OUTPUT	basics.h	68;"	d
+OVERSAMPLE	Amp.h	/^			OVERSAMPLE = 8,$/;"	e	enum:AmpStub::__anon2
+OVERSAMPLE	Clip.h	/^			OVERSAMPLE = 8,$/;"	e	enum:Clip::__anon10
+OVERSAMPLE	VCO.h	/^			OVERSAMPLE = 8,$/;"	e	enum:VCOd::__anon23
+OVERSAMPLE	VCO.h	/^			OVERSAMPLE = 8,$/;"	e	enum:VCOs::__anon22
+OnePoleHP	dsp/OnePole.h	/^		OnePoleHP (double d = 1.)$/;"	f	class:DSP::OnePoleHP
+OnePoleHP	dsp/OnePole.h	/^class OnePoleHP$/;"	c	namespace:DSP
+OnePoleLP	dsp/OnePole.h	/^		OnePoleLP (double d = 1.)$/;"	f	class:DSP::OnePoleLP
+OnePoleLP	dsp/OnePole.h	/^class OnePoleLP$/;"	c	namespace:DSP
+Order	dsp/ToneStack.h	/^		enum { Order = 3 };$/;"	e	enum:DSP::ToneStack::__anon27
+Order	dsp/ToneStack.h	/^		enum { Order = 3, Steps = 25 };$/;"	e	enum:DSP::ToneStackLT::__anon29
+Pan	Pan.h	/^class Pan$/;"	c
+PanTap	Pan.h	/^class PanTap$/;"	c
+PeakShelve	dsp/RBJ.h	/^		PeakShelve (double f, double Q, double dB)$/;"	f	class:DSP::RBJ::PeakShelve
+PeakShelve	dsp/RBJ.h	/^class PeakShelve$/;"	c	namespace:DSP::RBJ
+PeakingEQ	dsp/RBJ.h	/^		PeakingEQ (double f, double Q, double dB, T * ca, T * cb)$/;"	f	class:DSP::RBJ::PeakingEQ
+PeakingEQ	dsp/RBJ.h	/^class PeakingEQ$/;"	c	namespace:DSP::RBJ
+PhaserAP	Phaser.h	/^		PhaserAP() $/;"	f	class:PhaserAP
+PhaserAP	Phaser.h	/^class PhaserAP$/;"	c
+PhaserI	Phaser.h	/^class PhaserI$/;"	c
+PhaserII	Phaser.h	/^class PhaserII$/;"	c
+Plate	Reverb.h	/^class Plate$/;"	c
+Plate2x2	Reverb.h	/^class Plate2x2$/;"	c
+PlateStub	Reverb.h	/^class PlateStub$/;"	c
+Plugin	basics.h	/^class Plugin {$/;"	c
+PortCount	ladspa.h	/^  unsigned long PortCount;$/;"	m	struct:_LADSPA_Descriptor
+PortDescriptors	ladspa.h	/^  const LADSPA_PortDescriptor * PortDescriptors;$/;"	m	struct:_LADSPA_Descriptor
+PortInfo	basics.h	/^} PortInfo;$/;"	t	typeref:struct:__anon4
+PortNames	ladspa.h	/^  const char * const * PortNames;$/;"	m	struct:_LADSPA_Descriptor
+PortRangeHints	ladspa.h	/^  const LADSPA_PortRangeHint * PortRangeHints;$/;"	m	struct:_LADSPA_Descriptor
+PreampBand	Amp.h	/^PreampBand;$/;"	t	typeref:struct:__anon3
+PreampIII	Amp.h	/^class PreampIII$/;"	c
+PreampIV	Amp.h	/^class PreampIV$/;"	c
+Properties	ladspa.h	/^  LADSPA_Properties Properties;$/;"	m	struct:_LADSPA_Descriptor
+Q	Amp.h	/^	{float center, Q, adjust;}$/;"	m	struct:__anon3
+Q	Eq.cc	50;"	d	file:
+Q	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:AutoWah
+Q	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:SweepVFI
+Q	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:SweepVFII
+R1	dsp/ToneStack.h	/^	double R1, R2, R3, R4;$/;"	m	struct:DSP::__anon26
+R2	dsp/ToneStack.h	/^	double R1, R2, R3, R4;$/;"	m	struct:DSP::__anon26
+R3	dsp/ToneStack.h	/^	double R1, R2, R3, R4;$/;"	m	struct:DSP::__anon26
+R4	dsp/ToneStack.h	/^	double R1, R2, R3, R4;$/;"	m	struct:DSP::__anon26
+RBJ	dsp/RBJ.h	/^		RBJ (double f, double Q)$/;"	f	class:DSP::RBJ::RBJ
+RBJ	dsp/RBJ.h	/^class RBJ$/;"	c	namespace:DSP::RBJ
+RBJ	dsp/RBJ.h	/^namespace RBJ {$/;"	n	namespace:DSP
+RMS	dsp/RMS.h	/^		RMS()$/;"	f	class:DSP::RMS
+RMS	dsp/RMS.h	/^class RMS$/;"	c	namespace:DSP
+Roessler	Roessler.h	/^class Roessler$/;"	c
+Roessler	dsp/Roessler.h	/^		Roessler()$/;"	f	class:DSP::Roessler
+Roessler	dsp/Roessler.h	/^class Roessler$/;"	c	namespace:DSP
+SVF	Scape.h	/^typedef DSP::SVF<1> SVF;$/;"	t
+SVF	dsp/SVF.h	/^		SVF()$/;"	f	class:DSP::SVF
+SVF	dsp/SVF.h	/^class SVF$/;"	c	namespace:DSP
+Samples	dsp/r12ax7.h	/^enum { Zero = 566, Samples = 1668, };$/;"	e	enum:r12AX7::__anon24
+Scape	Scape.h	/^class Scape$/;"	c
+Sin	Sin.h	/^class Sin$/;"	c
+Sine	dsp/Sine.h	/^		Sine (double f, double fs, double phase)$/;"	f	class:DSP::Sine
+Sine	dsp/Sine.h	/^		Sine (double omega, double phase = 0.)$/;"	f	class:DSP::Sine
+Sine	dsp/Sine.h	/^		Sine()$/;"	f	class:DSP::Sine
+Sine	dsp/Sine.h	/^class Sine$/;"	c	namespace:DSP
+StackedSVF	dsp/SVF.h	/^class StackedSVF$/;"	c	namespace:DSP
+Steps	dsp/ToneStack.h	/^		enum { Order = 3, Steps = 25 };$/;"	e	enum:DSP::ToneStackLT::__anon29
+StereoChorusI	Chorus.h	/^class StereoChorusI$/;"	c
+StereoChorusII	Chorus.h	/^class StereoChorusII$/;"	c
+SweepVFI	SweepVF.h	/^class SweepVFI$/;"	c
+SweepVFII	SweepVF.h	/^class SweepVFII$/;"	c
+T	Reverb.cc	236;"	d	file:
+T	Reverb.cc	246;"	d	file:
+TDFII	dsp/TDFII.h	/^class TDFII$/;"	c	namespace:DSP
+TEN_TO_THE_SIXTH	basics.h	74;"	d
+TOGGLE	basics.h	55;"	d
+TRAP	basics.h	160;"	d
+TRAP	basics.h	162;"	d
+TSParameters	dsp/ToneStack.h	/^} TSParameters;$/;"	t	namespace:DSP	typeref:struct:DSP::__anon26
+TS_N_PRESETS	dsp/ToneStack.h	44;"	d
+Taps	Chorus.h	/^			Taps = 1$/;"	e	enum:ChorusII::__anon8
+ToneControls	Amp.h	/^class ToneControls $/;"	c
+ToneStack	ToneStack.h	/^class ToneStack $/;"	c
+ToneStack	dsp/ToneStack.h	/^		ToneStack() $/;"	f	class:DSP::ToneStack
+ToneStack	dsp/ToneStack.h	/^class ToneStack $/;"	c	namespace:DSP
+ToneStackKS	dsp/tonestack/ks_tab.h	/^double ToneStackKS[] = {$/;"	v
+ToneStackLT	ToneStack.h	/^class ToneStackLT$/;"	c
+ToneStackLT	dsp/ToneStack.h	/^		ToneStackLT() $/;"	f	class:DSP::ToneStackLT
+ToneStackLT	dsp/ToneStack.h	/^class ToneStackLT $/;"	c	namespace:DSP
+ToneStackVS	dsp/tonestack/vs_tab.h	/^double ToneStackVS[] = {$/;"	v
+TriSaw	dsp/VCO.h	/^		TriSaw()$/;"	f	class:DSP::TriSaw
+TriSaw	dsp/VCO.h	/^class TriSaw$/;"	c	namespace:DSP
+TriSawSquare	dsp/VCO.h	/^		TriSawSquare()$/;"	f	class:DSP::TriSawSquare
+TriSawSquare	dsp/VCO.h	/^class TriSawSquare$/;"	c	namespace:DSP
+TwelveAX7	dsp/TwelveAX7.h	/^		TwelveAX7()$/;"	f	class:DSP::TwelveAX7
+TwelveAX7	dsp/TwelveAX7.h	/^class TwelveAX7$/;"	c	namespace:DSP
+TwelveAX7_2	dsp/TwelveAX7.h	/^		TwelveAX7_2()$/;"	f	class:DSP::TwelveAX7_2
+TwelveAX7_2	dsp/TwelveAX7.h	/^class TwelveAX7_2$/;"	c	namespace:DSP
+TwelveAX7_3	dsp/TwelveAX7.h	/^		TwelveAX7_3()$/;"	f	class:DSP::TwelveAX7_3
+TwelveAX7_3	dsp/TwelveAX7.h	/^class TwelveAX7_3$/;"	c	namespace:DSP
+UniqueID	ladspa.h	/^  unsigned long UniqueID;$/;"	m	struct:_LADSPA_Descriptor
+UpperBound	ladspa.h	/^  LADSPA_Data UpperBound;$/;"	m	struct:_LADSPA_PortRangeHint
+VCO2	dsp/VCO.h	/^		VCO2()$/;"	f	class:DSP::VCO2
+VCO2	dsp/VCO.h	/^class VCO2$/;"	c	namespace:DSP
+VCOd	VCO.h	/^		VCOd()$/;"	f	class:VCOd
+VCOd	VCO.h	/^class VCOd$/;"	c
+VCOs	VCO.h	/^		VCOs()$/;"	f	class:VCOs
+VCOs	VCO.h	/^class VCOs$/;"	c
+White	White.h	/^class White$/;"	c
+White	dsp/White.h	/^		White()$/;"	f	class:DSP::White
+White	dsp/White.h	/^class White$/;"	c	namespace:DSP
+Zero	dsp/r12ax7.h	/^enum { Zero = 566, Samples = 1668, };$/;"	e	enum:r12AX7::__anon24
+_AMP_H_	Amp.h	29;"	d
+_BASICS_H_	basics.h	30;"	d
+_BP	dsp/Eq.h	/^_BP (double fc, double Q, T * ca, T * cb)$/;"	f	namespace:DSP
+_CABINET_H_	Cabinet.h	33;"	d
+_CHORUS_H_	Chorus.h	30;"	d
+_CLICK_H_	Click.h	29;"	d
+_CLIP_H_	Clip.h	29;"	d
+_COMPRESS_H_	Compress.h	29;"	d
+_DESCRIPTOR_H_	Descriptor.h	35;"	d
+_DSP_BI_QUAD_H_	dsp/BiQuad.h	29;"	d
+_DSP_DELAY_H_	dsp/Delay.h	33;"	d
+_DSP_EQ_H_	dsp/Eq.h	30;"	d
+_DSP_FP_TRUNCATE_MODE_H_	dsp/FPTruncateMode.h	14;"	d
+_DSP_LORENZ_H_	dsp/Lorenz.h	29;"	d
+_DSP_LatFilt_H_	dsp/LatFilt.h	29;"	d
+_DSP_RBJ_H_	dsp/RBJ.h	27;"	d
+_DSP_RMS_H_	dsp/RMS.h	29;"	d
+_DSP_ROESSLER_H_	dsp/Roessler.h	29;"	d
+_DSP_R_12_AX_7_H_	dsp/r12ax7.h	31;"	d
+_DSP_SINE_H_	dsp/Sine.h	29;"	d
+_DSP_SVF_H_	dsp/SVF.h	74;"	d
+_DSP_TDFII_H_	dsp/TDFII.h	31;"	d
+_DSP_TONESTACK_H_	dsp/ToneStack.h	29;"	d
+_DSP_TWELVE_AX_7_H_	dsp/TwelveAX7.h	28;"	d
+_DSP_UTIL_H_	dsp/util.h	29;"	d
+_DSP_VCO_H_	dsp/VCO.h	31;"	d
+_DSP_WHITE_H_	dsp/White.h	29;"	d
+_DSP_WINDOWS_H_	dsp/windows.h	29;"	d
+_ELEV_0_H_	elev0.h	2;"	d
+_EQ_H_	Eq.h	29;"	d
+_FIR_H_	dsp/FIR.h	29;"	d
+_GNU_SOURCE	basics.h	32;"	d
+_HRTF_H_	HRTF.h	29;"	d
+_ISOC99_SOURCE	basics.h	38;"	d
+_ISOC9X_SOURCE	basics.h	39;"	d
+_KS_TAB_H_	dsp/tonestack/ks_tab.h	29;"	d
+_LADSPA_Descriptor	ladspa.h	/^typedef struct _LADSPA_Descriptor { $/;"	s
+_LADSPA_PortRangeHint	ladspa.h	/^typedef struct _LADSPA_PortRangeHint {$/;"	s
+_LORENZ_H_	Lorenz.h	29;"	d
+_ONE_POLE_H_	dsp/OnePole.h	29;"	d
+_PAN_H_	Pan.h	29;"	d
+_PHASER_H_	Phaser.h	29;"	d
+_REVERB_H_	Reverb.h	48;"	d
+_ROESSLER_H_	Roessler.h	29;"	d
+_SCAPE_H_	Scape.h	27;"	d
+_SINC_H_	dsp/sinc.h	29;"	d
+_SIN_H_	Sin.h	29;"	d
+_SWEEP_VF_H_	SweepVF.h	34;"	d
+_TONESTACK_H_	ToneStack.h	29;"	d
+_TS_TABLES_H_	dsp/tonestack/tables.h	29;"	d
+_USE_GNU	basics.h	33;"	d
+_VCO_H_	VCO.h	30;"	d
+_VS_TAB_H_	dsp/tonestack/vs_tab.h	30;"	d
+_WHITE_H_	White.h	29;"	d
+__USE_ISOC99	basics.h	36;"	d
+__USE_ISOC9X	basics.h	37;"	d
+_activate	Descriptor.h	/^		static void _activate (LADSPA_Handle h)$/;"	f	class:Descriptor
+_cleanup	Descriptor.h	/^		static void _cleanup (LADSPA_Handle h)$/;"	f	class:Descriptor
+_connect_port	Descriptor.h	/^		static void _connect_port (LADSPA_Handle h, ulong i, LADSPA_Data * p)$/;"	f	class:Descriptor
+_fini	interface.cc	/^void _fini()$/;"	f
+_init	interface.cc	/^void _init()$/;"	f
+_instantiate	Descriptor.h	/^		static LADSPA_Handle _instantiate ($/;"	f	class:Descriptor
+_run	Descriptor.h	/^		static void _run (LADSPA_Handle h, ulong n)$/;"	f	class:Descriptor
+_run_adding	Descriptor.h	/^		static void _run_adding (LADSPA_Handle h, ulong n)$/;"	f	class:Descriptor
+_set_run_adding_gain	Descriptor.h	/^		static void _set_run_adding_gain (LADSPA_Handle h, LADSPA_Data g)$/;"	f	class:Descriptor
+a	Cabinet.h	/^		cabinet_float * a, * b;$/;"	m	class:CabinetI
+a	Cabinet.h	/^		cabinet_float * a, * b;$/;"	m	class:CabinetII
+a	Cabinet.h	/^	cabinet_float a[16], b[16];$/;"	m	struct:__anon5
+a	Cabinet.h	/^	cabinet_float a[32], b[32];$/;"	m	struct:__anon6
+a	HRTF.h	/^			double * a, * b;$/;"	m	struct:HRTF::__anon14
+a	Phaser.h	/^		d_sample a, m;$/;"	m	class:PhaserAP
+a	dsp/BiQuad.h	/^		d_sample a[3], b[3];$/;"	m	class:DSP::BiQuad
+a	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) a[Bands], b[Bands], c[Bands];$/;"	m	class:DSP::Eq
+a	dsp/Lorenz.h	/^		double h, a, b, c;$/;"	m	class:DSP::Lorenz
+a	dsp/RBJ.h	/^		double a[3], b[3];$/;"	m	class:DSP::RBJ::RBJ
+a	dsp/Roessler.h	/^		double h, a, b, c;$/;"	m	class:DSP::Roessler
+a	dsp/TDFII.h	/^		double a[Order + 1];$/;"	m	class:DSP::TDFII
+a	elev0.h	/^	struct {double a[31], b[31];} left, right;$/;"	m	struct:__anon11::__anon12
+a0	dsp/OnePole.h	/^		d_sample a0, a1, b1, x1, y1;$/;"	m	class:DSP::OnePoleHP
+a0	dsp/OnePole.h	/^		d_sample a0, b1, y1;$/;"	m	class:DSP::OnePoleLP
+a0	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a1	dsp/OnePole.h	/^		d_sample a0, a1, b1, x1, y1;$/;"	m	class:DSP::OnePoleHP
+a1	dsp/ToneStack.h	/^				double a1;$/;"	m	struct:DSP::ToneStack::__anon28
+a1d	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a1l	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a1m	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a2	dsp/ToneStack.h	/^				double a2;$/;"	m	struct:DSP::ToneStack::__anon28
+a2d	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a2l	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a2lm	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a2m	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a2m2	dsp/ToneStack.h	/^				a0, a1d, a1m, a1l, a2m, a2lm, a2m2, a2l, a2d,$/;"	m	class:DSP::ToneStack
+a3	dsp/ToneStack.h	/^				double a3;$/;"	m	struct:DSP::ToneStack::__anon28
+a3d	dsp/ToneStack.h	/^				a3lm, a3m2, a3m, a3l, a3d;      \/\/ intermediate calculations$/;"	m	class:DSP::ToneStack
+a3l	dsp/ToneStack.h	/^				a3lm, a3m2, a3m, a3l, a3d;      \/\/ intermediate calculations$/;"	m	class:DSP::ToneStack
+a3lm	dsp/ToneStack.h	/^				a3lm, a3m2, a3m, a3l, a3d;      \/\/ intermediate calculations$/;"	m	class:DSP::ToneStack
+a3m	dsp/ToneStack.h	/^				a3lm, a3m2, a3m, a3l, a3d;      \/\/ intermediate calculations$/;"	m	class:DSP::ToneStack
+a3m2	dsp/ToneStack.h	/^				a3lm, a3m2, a3m, a3l, a3d;      \/\/ intermediate calculations$/;"	m	class:DSP::ToneStack
+abs	dsp/White.h	/^		d_sample abs()$/;"	f	class:DSP::White
+acoef	dsp/ToneStack.h	/^		} acoef; \/\/ analog coefficients$/;"	m	class:DSP::ToneStack	typeref:struct:DSP::ToneStack::__anon28
+activate	Amp.h	/^		void activate()$/;"	f	class:AmpIII
+activate	Amp.h	/^		void activate()$/;"	f	class:AmpIV
+activate	Amp.h	/^		void activate()$/;"	f	class:AmpV
+activate	Amp.h	/^		void activate()$/;"	f	class:AmpVTS
+activate	Amp.h	/^		void activate()$/;"	f	class:PreampIII
+activate	Cabinet.cc	/^CabinetI::activate()$/;"	f	class:CabinetI
+activate	Cabinet.cc	/^CabinetII::activate()$/;"	f	class:CabinetII
+activate	Chorus.h	/^		void activate()$/;"	f	class:ChorusI
+activate	Chorus.h	/^		void activate()$/;"	f	class:ChorusII
+activate	Chorus.h	/^		void activate()$/;"	f	class:StereoChorusI
+activate	Chorus.h	/^		void activate()$/;"	f	class:StereoChorusII
+activate	Click.h	/^		void activate()$/;"	f	class:ClickStub
+activate	Clip.h	/^		void activate()$/;"	f	class:Clip
+activate	Compress.h	/^		void activate()$/;"	f	class:Compress
+activate	Eq.cc	/^Eq2x2::activate()$/;"	f	class:Eq2x2
+activate	Eq.cc	/^Eq::activate()$/;"	f	class:Eq
+activate	HRTF.h	/^		void activate()$/;"	f	class:HRTF
+activate	Lorenz.h	/^		void activate() {}$/;"	f	class:Lorenz
+activate	Pan.cc	/^Pan::activate()$/;"	f	class:Pan
+activate	Phaser.h	/^		void activate()$/;"	f	class:PhaserI
+activate	Phaser.h	/^		void activate()$/;"	f	class:PhaserII
+activate	Preamp.cc	/^PreampIV::activate()$/;"	f	class:PreampIV
+activate	Reverb.cc	/^JVRev::activate()$/;"	f	class:JVRev
+activate	Reverb.h	/^		void activate()$/;"	f	class:PlateStub
+activate	Roessler.h	/^		void activate() {}$/;"	f	class:Roessler
+activate	Scape.cc	/^Scape::activate()$/;"	f	class:Scape
+activate	Sin.h	/^		void activate() {}$/;"	f	class:Sin
+activate	SweepVF.cc	/^AutoWah::activate()$/;"	f	class:AutoWah
+activate	SweepVF.cc	/^SweepVFI::activate()$/;"	f	class:SweepVFI
+activate	SweepVF.cc	/^SweepVFII::activate()$/;"	f	class:SweepVFII
+activate	ToneControls.cc	/^ToneControls::activate (d_sample ** ports)$/;"	f	class:ToneControls
+activate	ToneStack.cc	/^ToneStack::activate()$/;"	f	class:ToneStack
+activate	ToneStack.h	/^		void activate()$/;"	f	class:ToneStackLT
+activate	VCO.h	/^		void activate()$/;"	f	class:VCOd
+activate	VCO.h	/^		void activate()$/;"	f	class:VCOs
+activate	White.h	/^		void activate()$/;"	f	class:White
+activate	dsp/ToneStack.h	/^		void activate (d_sample ** ports)$/;"	f	class:DSP::ToneStack
+activate	dsp/ToneStack.h	/^		void activate (d_sample ** ports)$/;"	f	class:DSP::ToneStackLT
+activate	ladspa.h	/^  void (*activate)(LADSPA_Handle Instance);$/;"	m	struct:_LADSPA_Descriptor
+adding_func	basics.h	/^adding_func (d_sample * s, int i, d_sample x, d_sample gain)$/;"	f
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:AmpIII
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:AmpIV
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:AmpV
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:AmpVTS
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:PreampIII
+adding_gain	Amp.h	/^		d_sample adding_gain;$/;"	m	class:PreampIV
+adding_gain	Cabinet.h	/^		d_sample adding_gain;$/;"	m	class:CabinetII
+adding_gain	Chorus.h	/^		d_sample adding_gain;$/;"	m	class:StereoChorusII
+adding_gain	Roessler.h	/^		d_sample adding_gain;$/;"	m	class:Roessler
+adding_gain	basics.h	/^		double adding_gain; \/* for run_adding() *\/$/;"	m	class:Plugin
+adjust	Amp.h	/^	{float center, Q, adjust;}$/;"	m	struct:__anon3
+adjust_gain	Eq.cc	/^adjust_gain (int i, double g)$/;"	f	file:
+af	dsp/ToneStack.h	/^		double af [Order + 1];$/;"	m	class:DSP::ToneStackLT
+af	dsp/ToneStack.h	/^		double af[Order + 1];$/;"	m	class:DSP::ToneStack
+allpass	Reverb.h	/^		Lattice allpass [3];$/;"	m	class:JVRev
+alpha	dsp/RBJ.h	/^		double alpha, sin, cos;$/;"	m	class:DSP::RBJ::RBJ
+amp	Compress.h	/^		d_sample sum, amp, env, gain, gain_t;$/;"	m	class:Compress
+ap	Phaser.h	/^		PhaserAP ap[6];$/;"	m	class:PhaserI
+ap	Phaser.h	/^		PhaserAP ap[6];$/;"	m	class:PhaserII
+apc	Reverb.h	/^		double apc;$/;"	m	class:JVRev
+apply_window	dsp/windows.h	/^apply_window (d_sample &d, d_sample s)$/;"	f	namespace:DSP
+autogen	Descriptor.h	/^		void autogen() $/;"	f	class:Descriptor
+b	Cabinet.h	/^		cabinet_float * a, * b;$/;"	m	class:CabinetI
+b	Cabinet.h	/^		cabinet_float * a, * b;$/;"	m	class:CabinetII
+b	Cabinet.h	/^	cabinet_float a[16], b[16];$/;"	m	struct:__anon5
+b	Cabinet.h	/^	cabinet_float a[32], b[32];$/;"	m	struct:__anon6
+b	HRTF.h	/^			double * a, * b;$/;"	m	struct:HRTF::__anon14
+b	dsp/BiQuad.h	/^		d_sample a[3], b[3];$/;"	m	class:DSP::BiQuad
+b	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) a[Bands], b[Bands], c[Bands];$/;"	m	class:DSP::Eq
+b	dsp/Lorenz.h	/^		double h, a, b, c;$/;"	m	class:DSP::Lorenz
+b	dsp/RBJ.h	/^		double a[3], b[3];$/;"	m	class:DSP::RBJ::RBJ
+b	dsp/Roessler.h	/^		double h, a, b, c;$/;"	m	class:DSP::Roessler
+b	dsp/Sine.h	/^		d_float b;$/;"	m	class:DSP::Sine
+b	dsp/TDFII.h	/^		double b[Order + 1];$/;"	m	class:DSP::TDFII
+b	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7
+b	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_2
+b	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_3
+b	dsp/White.h	/^		uint32 b;$/;"	m	class:DSP::White
+b	elev0.h	/^	struct {double a[31], b[31];} left, right;$/;"	m	struct:__anon11::__anon12
+b1	dsp/OnePole.h	/^		d_sample a0, a1, b1, x1, y1;$/;"	m	class:DSP::OnePoleHP
+b1	dsp/OnePole.h	/^		d_sample a0, b1, y1;$/;"	m	class:DSP::OnePoleLP
+b1	dsp/ToneStack.h	/^				double b1;$/;"	m	struct:DSP::ToneStack::__anon28
+b1d	dsp/ToneStack.h	/^		double b1t, b1m, b1l, b1d,$/;"	m	class:DSP::ToneStack
+b1l	dsp/ToneStack.h	/^		double b1t, b1m, b1l, b1d,$/;"	m	class:DSP::ToneStack
+b1m	dsp/ToneStack.h	/^		double b1t, b1m, b1l, b1d,$/;"	m	class:DSP::ToneStack
+b1t	dsp/ToneStack.h	/^		double b1t, b1m, b1l, b1d,$/;"	m	class:DSP::ToneStack
+b2	dsp/ToneStack.h	/^				double b2;$/;"	m	struct:DSP::ToneStack::__anon28
+b2d	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b2l	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b2lm	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b2m	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b2m2	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b2t	dsp/ToneStack.h	/^				b2t, b2m2, b2m, b2l, b2lm, b2d,$/;"	m	class:DSP::ToneStack
+b3	dsp/ToneStack.h	/^				double b3;$/;"	m	struct:DSP::ToneStack::__anon28
+b3lm	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+b3m	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+b3m2	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+b3t	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+b3tl	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+b3tm	dsp/ToneStack.h	/^				b3lm, b3m2, b3m, b3t, b3tm, b3tl,$/;"	m	class:DSP::ToneStack
+band	dsp/SVF.h	/^		d_sample lo, band, hi;$/;"	m	class:DSP::SVF
+bands	Amp.h	/^		static PreampBand bands[4];$/;"	m	class:ToneControls
+bands	ToneControls.cc	/^ToneControls::bands[] = $/;"	m	class:ToneControls	file:
+bandwidth	Reverb.h	/^			DSP::OnePoleLP bandwidth;$/;"	m	struct:PlateStub::__anon17
+besseli	dsp/windows.h	/^besseli (double x)$/;"	f	namespace:DSP
+beta	dsp/RBJ.h	/^		double A, beta;$/;"	m	class:DSP::RBJ::PeakShelve
+bf	dsp/ToneStack.h	/^		double bf [Order + 1];$/;"	m	class:DSP::ToneStackLT
+bf	dsp/ToneStack.h	/^		double bf[Order + 1];$/;"	m	class:DSP::ToneStack
+blackman	dsp/windows.h	/^blackman (d_sample * s, int n)$/;"	f	namespace:DSP
+blackman_harris	dsp/windows.h	/^blackman_harris (d_sample * s, int n)$/;"	f	namespace:DSP
+blend	dsp/VCO.h	/^		float blend, i_blend;$/;"	m	class:DSP::VCO2
+block	Eq.h	/^		int block;$/;"	m	class:Eq
+blocksize	Phaser.h	/^		int blocksize, remain;$/;"	m	class:PhaserI
+blocksize	Phaser.h	/^		int blocksize, remain;$/;"	m	class:PhaserII
+borrowed_kernel	dsp/FIR.h	/^		bool borrowed_kernel;$/;"	m	class:DSP::FIR
+bottom	Phaser.h	/^			double bottom, range;$/;"	m	struct:PhaserI::__anon15
+bottom	Phaser.h	/^			double bottom, range;$/;"	m	struct:PhaserII::__anon16
+bpm	Click.h	/^		d_sample bpm;$/;"	m	class:ClickStub
+buffer	dsp/RMS.h	/^		d_sample buffer[64];$/;"	m	class:DSP::RMS
+c	Reverb.h	/^		float c;$/;"	m	class:JVComb
+c	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) a[Bands], b[Bands], c[Bands];$/;"	m	class:DSP::Eq
+c	dsp/FIR.h	/^		d_sample * c, * x;$/;"	m	class:DSP::FIR
+c	dsp/FIR.h	/^		d_sample * c, * x;$/;"	m	class:DSP::FIRUpsampler
+c	dsp/Lorenz.h	/^		double h, a, b, c;$/;"	m	class:DSP::Lorenz
+c	dsp/Roessler.h	/^		double h, a, b, c;$/;"	m	class:DSP::Roessler
+c	dsp/ToneStack.h	/^		double c;   \/\/ BT coef$/;"	m	class:DSP::ToneStack
+c	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7
+c	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_2
+c	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_3
+cabinet_float	Cabinet.h	/^typedef double cabinet_float;$/;"	t
+center	Amp.h	/^	{float center, Q, adjust;}$/;"	m	struct:__anon3
+clamp	basics.h	/^T clamp (T value, T lower, T upper)$/;"	f
+cleanup	ladspa.h	/^  void (*cleanup)(LADSPA_Handle Instance);$/;"	m	struct:_LADSPA_Descriptor
+clear	dsp/TDFII.h	/^		void clear() $/;"	f	class:DSP::TDFII
+clearcoefs	dsp/LatFilt.h	/^		void clearcoefs() {$/;"	f	class:DSP::LatFilt
+clip	Clip.cc	/^Clip::clip (d_sample a)$/;"	f	class:Clip
+clip	dsp/TwelveAX7.h	/^		} clip[2];$/;"	m	class:DSP::NoTwelveAX7	typeref:struct:DSP::NoTwelveAX7::__anon33
+clip	dsp/TwelveAX7.h	/^		} clip[2];$/;"	m	class:DSP::TwelveAX7	typeref:struct:DSP::TwelveAX7::__anon30
+clip	dsp/TwelveAX7.h	/^		} clip[2];$/;"	m	class:DSP::TwelveAX7_2	typeref:struct:DSP::TwelveAX7_2::__anon31
+clip	dsp/TwelveAX7.h	/^		} clip[2];$/;"	m	class:DSP::TwelveAX7_3	typeref:struct:DSP::TwelveAX7_3::__anon32
+comb	Reverb.h	/^		JVComb comb[4];$/;"	m	class:JVRev
+connect_port	ladspa.h	/^   void (*connect_port)(LADSPA_Handle Instance,$/;"	m	struct:_LADSPA_Descriptor
+copy	dsp/BiQuad.h	/^		void copy (BiQuad & bq)$/;"	f	class:DSP::BiQuad
+cos	dsp/RBJ.h	/^		double alpha, sin, cos;$/;"	m	class:DSP::RBJ::RBJ
+count	Compress.h	/^		int count;$/;"	m	class:Compress
+current	Amp.h	/^		} current;$/;"	m	class:AmpStub	typeref:struct:AmpStub::__anon1
+cut	Amp.h	/^		d_sample cut, tone;$/;"	m	class:AmpV
+cut	Amp.h	/^		d_sample cut, tone;$/;"	m	class:AmpVTS
+cw0	dsp/FPTruncateMode.h	/^		int cw0, cw1; \/* fp control word *\/$/;"	m	class:DSP::FPTruncateMode
+cw1	dsp/FPTruncateMode.h	/^		int cw0, cw1; \/* fp control word *\/$/;"	m	class:DSP::FPTruncateMode
+d	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7
+d	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_2
+d	dsp/TwelveAX7.h	/^		tube_sample b, c, d;$/;"	m	class:DSP::TwelveAX7_3
+d_float	basics.h	/^typedef double d_float;$/;"	t
+d_sample	basics.h	/^typedef LADSPA_Data d_sample;$/;"	t
+damper	Pan.h	/^		DSP::OnePoleLP damper;$/;"	m	class:PanTap
+damping	Reverb.h	/^			DSP::OnePoleLP damping[2];$/;"	m	struct:PlateStub::__anon18
+data	dsp/Delay.h	/^		d_sample * data;$/;"	m	class:DSP::Delay
+db2lin	dsp/util.h	/^db2lin (double db)$/;"	f	namespace:DSP
+dc_blocker	Amp.h	/^		DSP::OnePoleHP dc_blocker;$/;"	m	class:AmpStub
+dcoef_a	dsp/ToneStack.h	/^		double dcoef_a[Order + 1];$/;"	m	class:DSP::ToneStack
+dcoef_b	dsp/ToneStack.h	/^		double dcoef_b[Order + 1];$/;"	m	class:DSP::ToneStack
+deactivate	ladspa.h	/^  void (*deactivate)(LADSPA_Handle Instance);$/;"	m	struct:_LADSPA_Descriptor
+decay	dsp/OnePole.h	/^		inline void decay (double d)$/;"	f	class:DSP::OnePoleLP
+dediff1	Reverb.h	/^		d_sample indiff1, indiff2, dediff1, dediff2;$/;"	m	class:PlateStub
+dediff2	Reverb.h	/^		d_sample indiff1, indiff2, dediff1, dediff2;$/;"	m	class:PlateStub
+default_length	Reverb.cc	/^JVRev::default_length[9] = {$/;"	m	class:JVRev	file:
+default_length	Reverb.h	/^		static int default_length[9];$/;"	m	class:JVRev
+delay	Chorus.h	/^		DSP::Delay delay;$/;"	m	class:ChorusI
+delay	Chorus.h	/^		DSP::Delay delay;$/;"	m	class:ChorusII
+delay	Chorus.h	/^		DSP::Delay delay;$/;"	m	class:StereoChorusI
+delay	Chorus.h	/^		DSP::Delay delay;$/;"	m	class:StereoChorusII
+delay	Pan.h	/^		DSP::Delay delay;$/;"	m	class:Pan
+delay	Phaser.h	/^		} delay;$/;"	m	class:PhaserI	typeref:struct:PhaserI::__anon15
+delay	Phaser.h	/^		} delay;$/;"	m	class:PhaserII	typeref:struct:PhaserII::__anon16
+delay	Reverb.h	/^			DSP::Delay delay[4];$/;"	m	struct:PlateStub::__anon18
+delay	Reverb.h	/^		DSP::Delay delay;$/;"	m	class:ModLattice
+delay	Scape.h	/^		DSP::Delay delay;$/;"	m	class:Scape
+descriptor	basics.h	/^	LADSPA_PortDescriptor descriptor;$/;"	m	struct:__anon4
+descriptors	interface.cc	/^static DescriptorStub * descriptors [N];$/;"	v	file:
+dirac	Click.cc	/^float dirac [] = { 1, };$/;"	v
+dividers	Scape.cc	/^dividers [] = {$/;"	v	file:
+down	Amp.h	/^		DSP::FIR down;$/;"	m	class:AmpStub
+down	Clip.h	/^		DSP::FIR down;$/;"	m	class:Clip
+down	VCO.h	/^		DSP::FIR down;$/;"	m	class:VCOd
+down	VCO.h	/^		DSP::FIR down;$/;"	m	class:VCOs
+drive	Amp.h	/^		d_sample drive, i_drive;$/;"	m	class:AmpStub
+elev0	elev0.h	/^elev0 [] = $/;"	v	typeref:struct:__anon11
+env	Compress.h	/^		d_sample sum, amp, env, gain, gain_t;$/;"	m	class:Compress
+eq	Amp.h	/^		DSP::Eq<4> eq;$/;"	m	class:ToneControls
+eq	Eq.h	/^		DSP::Eq<10> eq;$/;"	m	class:Eq
+eq	Eq.h	/^		DSP::Eq<10> eq[2];$/;"	m	class:Eq2x2
+eq_gain	Amp.h	/^		d_sample eq_gain[4];$/;"	m	class:ToneControls
+f	Compress.h	/^		d_sample f;$/;"	m	class:Compress
+f	Sin.h	/^		d_sample f, gain;$/;"	m	class:Sin
+f	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:AutoWah
+f	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:SweepVFI
+f	SweepVF.h	/^		d_sample f, Q;$/;"	m	class:SweepVFII
+f	VCO.h	/^		d_sample f, gain;$/;"	m	class:VCOd
+f	VCO.h	/^		d_sample f, gain;$/;"	m	class:VCOs
+f	dsp/SVF.h	/^		d_sample f, q, qnorm;$/;"	m	class:DSP::SVF
+f1	Chorus.h	/^		DSP::Lorenz f1;$/;"	m	class:FracTap
+f2	Chorus.h	/^		DSP::Roessler f2;$/;"	m	class:FracTap
+f_lfo	Reverb.h	/^		d_sample f_lfo;$/;"	m	class:PlateStub
+fb	Scape.h	/^		d_sample time, fb;$/;"	m	class:Scape
+filter	Amp.h	/^		DSP::BiQuad filter;$/;"	m	class:AmpIII
+filter	Amp.h	/^		DSP::BiQuad filter;$/;"	m	class:PreampIII
+filter	Amp.h	/^		DSP::BiQuad filter[3];$/;"	m	class:AmpV
+filter	Chorus.h	/^		DSP::BiQuad filter;$/;"	m	class:ChorusII
+filter	SweepVF.h	/^		DSP::BiQuad filter;$/;"	m	class:AutoWah
+filter	dsp/ToneStack.h	/^		LatFilt<Order> filter;$/;"	m	class:DSP::ToneStackLT
+filter	dsp/ToneStack.h	/^		TDFII<Order> filter;$/;"	m	class:DSP::ToneStack
+first_run	basics.h	/^		int first_run; \/* 1st block after activate(), do no parameter smoothing *\/$/;"	m	class:Plugin
+fistp	dsp/FPTruncateMode.h	24;"	d
+fistp	dsp/FPTruncateMode.h	30;"	d
+fldcw	dsp/FPTruncateMode.h	20;"	d
+fldcw	dsp/FPTruncateMode.h	28;"	d
+flush_0	dsp/BiQuad.h	/^		void flush_0()$/;"	f	class:DSP::BiQuad
+flush_0	dsp/Eq.h	/^		void flush_0()$/;"	f	class:DSP::Eq
+flush_0	dsp/OnePole.h	/^		void flush_0()$/;"	f	class:DSP::OnePoleHP
+flush_0	dsp/OnePole.h	/^		void flush_0()$/;"	f	class:DSP::OnePoleLP
+fractal	Chorus.h	/^			DSP::Roessler fractal;$/;"	m	struct:StereoChorusII::__anon9
+frandom	basics.h	/^frandom()$/;"	f
+frandom2	Scape.cc	/^frandom2()$/;"	f
+fs	Compress.h	/^		double fs;$/;"	m	class:Compress
+fs	Phaser.h	/^		double fs;$/;"	m	class:PhaserII
+fs	SweepVF.h	/^		double fs;$/;"	m	class:AutoWah
+fs	SweepVF.h	/^		double fs;$/;"	m	class:SweepVFI
+fs	VCO.h	/^		double fs;$/;"	m	class:VCOd
+fs	basics.h	/^		double fs; \/* sample rate *\/$/;"	m	class:Plugin
+fs	dsp/ToneStack.h	/^		double fs;$/;"	m	class:DSP::ToneStack
+fs	dsp/ToneStack.h	/^		double fs;$/;"	m	class:DSP::ToneStackLT
+fstcw	dsp/FPTruncateMode.h	17;"	d
+fstcw	dsp/FPTruncateMode.h	27;"	d
+g	Amp.h	/^			double g;$/;"	m	struct:AmpStub::__anon1
+gain	Cabinet.h	/^		d_sample gain;$/;"	m	class:CabinetI
+gain	Cabinet.h	/^		d_sample gain;$/;"	m	class:CabinetII
+gain	Cabinet.h	/^	float gain;$/;"	m	struct:__anon5
+gain	Cabinet.h	/^	float gain;$/;"	m	struct:__anon6
+gain	Clip.h	/^		d_sample gain, gain_db;$/;"	m	class:Clip
+gain	Compress.h	/^		d_sample sum, amp, env, gain, gain_t;$/;"	m	class:Compress
+gain	Eq.h	/^		d_sample gain[10];$/;"	m	class:Eq
+gain	Eq.h	/^		d_sample gain[10];$/;"	m	class:Eq2x2
+gain	Lorenz.h	/^		d_sample h, gain;$/;"	m	class:Lorenz
+gain	Roessler.h	/^		d_sample h, gain;$/;"	m	class:Roessler
+gain	Sin.h	/^		d_sample f, gain;$/;"	m	class:Sin
+gain	VCO.h	/^		d_sample f, gain;$/;"	m	class:VCOd
+gain	VCO.h	/^		d_sample f, gain;$/;"	m	class:VCOs
+gain	White.h	/^		d_sample gain;$/;"	m	class:White
+gain	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) gain[Bands], gf[Bands];$/;"	m	class:DSP::Eq
+gain_db	Clip.h	/^		d_sample gain, gain_db;$/;"	m	class:Clip
+gain_l	Pan.h	/^		d_sample gain_l, gain_r;$/;"	m	class:Pan
+gain_r	Pan.h	/^		d_sample gain_l, gain_r;$/;"	m	class:Pan
+gain_t	Compress.h	/^		d_sample sum, amp, env, gain, gain_t;$/;"	m	class:Compress
+get	Chorus.h	/^		d_sample get (DSP::Delay & d, double t, double w)$/;"	f	class:FracTap
+get	Pan.h	/^		d_sample get (DSP::Delay & delay)$/;"	f	class:PanTap
+get	dsp/Delay.h	/^		d_sample get (Delay & d, float f)$/;"	f	class:DSP::DelayTapA
+get	dsp/Delay.h	/^		get()$/;"	f	class:DSP::Delay
+get	dsp/Lorenz.h	/^		d_sample get()$/;"	f	class:DSP::Lorenz
+get	dsp/Roessler.h	/^		d_sample get()$/;"	f	class:DSP::Roessler
+get	dsp/Sine.h	/^		inline double get()$/;"	f	class:DSP::Sine
+get	dsp/VCO.h	/^		inline float get()$/;"	f	class:DSP::TriSaw
+get	dsp/VCO.h	/^		inline float get()$/;"	f	class:DSP::TriSawSquare
+get	dsp/VCO.h	/^		inline float get()$/;"	f	class:DSP::VCO2
+get	dsp/White.h	/^		d_sample get()$/;"	f	class:DSP::White
+get_31	dsp/White.h	/^		d_sample get_31()$/;"	f	class:DSP::White
+get_at	dsp/Delay.h	/^		get_at (float f)$/;"	f	class:DSP::Delay
+get_band_gain	ToneControls.cc	/^ToneControls::get_band_gain (int i, double g)$/;"	f	class:ToneControls
+get_cubic	dsp/Delay.h	/^		get_cubic (float f)$/;"	f	class:DSP::Delay
+get_phase	dsp/Sine.h	/^		double get_phase()$/;"	f	class:DSP::Sine
+get_root	dsp/TwelveAX7.h	/^		inline double get_root (double sign)$/;"	f	class:DSP::TwelveAX7
+get_x	dsp/Lorenz.h	/^		double get_x()$/;"	f	class:DSP::Lorenz
+get_x	dsp/Roessler.h	/^		double get_x()$/;"	f	class:DSP::Roessler
+get_y	dsp/Lorenz.h	/^		double get_y()$/;"	f	class:DSP::Lorenz
+get_y	dsp/Roessler.h	/^		double get_y()$/;"	f	class:DSP::Roessler
+get_z	dsp/Lorenz.h	/^		double get_z()$/;"	f	class:DSP::Lorenz
+get_z	dsp/Roessler.h	/^		double get_z()$/;"	f	class:DSP::Roessler
+getport	basics.h	/^		inline d_sample getport (int i)$/;"	f	class:Plugin
+getport_unclamped	basics.h	/^		inline d_sample getport_unclamped (int i)$/;"	f	class:Plugin
+gf	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) gain[Bands], gf[Bands];$/;"	m	class:DSP::Eq
+h	Cabinet.h	/^		int n, h;$/;"	m	class:CabinetI
+h	Cabinet.h	/^		int n, h;$/;"	m	class:CabinetII
+h	HRTF.h	/^		int n, h;$/;"	m	class:HRTF
+h	Lorenz.h	/^		d_sample h, gain;$/;"	m	class:Lorenz
+h	Roessler.h	/^		d_sample h, gain;$/;"	m	class:Roessler
+h	dsp/BiQuad.h	/^		int h;$/;"	m	class:DSP::BiQuad
+h	dsp/Eq.h	/^		int h;$/;"	m	class:DSP::Eq
+h	dsp/FIR.h	/^		int h; $/;"	m	class:DSP::FIR
+h	dsp/FIR.h	/^		int h; $/;"	m	class:DSP::FIRUpsampler
+h	dsp/Lorenz.h	/^		double h, a, b, c;$/;"	m	class:DSP::Lorenz
+h	dsp/Roessler.h	/^		double h, a, b, c;$/;"	m	class:DSP::Roessler
+h	dsp/TDFII.h	/^		double h[Order + 1];$/;"	m	class:DSP::TDFII
+hanning	dsp/windows.h	/^hanning (d_sample * s, int n)$/;"	f	namespace:DSP
+hi	dsp/SVF.h	/^		d_sample lo, band, hi;$/;"	m	class:DSP::SVF
+hipass	Scape.h	/^		DSP::OnePoleHP hipass[4];$/;"	m	class:Scape
+hp	SweepVF.h	/^		DSP::OnePoleHP hp;$/;"	m	class:AutoWah
+i_blend	dsp/VCO.h	/^		float blend, i_blend;$/;"	m	class:DSP::VCO2
+i_drive	Amp.h	/^		d_sample drive, i_drive;$/;"	m	class:AmpStub
+inc	dsp/VCO.h	/^		double phase, inc;$/;"	m	class:DSP::TriSaw
+inc	dsp/VCO.h	/^		double phase, inc;$/;"	m	class:DSP::TriSawSquare
+indiff1	Reverb.h	/^		d_sample indiff1, indiff2, dediff1, dediff2;$/;"	m	class:PlateStub
+indiff2	Reverb.h	/^		d_sample indiff1, indiff2, dediff1, dediff2;$/;"	m	class:PlateStub
+init	Amp.cc	/^AmpIII::init()$/;"	f	class:AmpIII
+init	Amp.cc	/^AmpIV::init()$/;"	f	class:AmpIV
+init	Amp.cc	/^AmpStub::init (bool adjust_downsampler)$/;"	f	class:AmpStub
+init	Amp.cc	/^AmpV::init()$/;"	f	class:AmpV
+init	Amp.cc	/^AmpVTS::init()$/;"	f	class:AmpVTS
+init	Cabinet.cc	/^CabinetI::init()$/;"	f	class:CabinetI
+init	Cabinet.cc	/^CabinetII::init()$/;"	f	class:CabinetII
+init	Chorus.h	/^		void init (double fs)$/;"	f	class:FracTap
+init	Chorus.h	/^		void init()$/;"	f	class:ChorusI
+init	Chorus.h	/^		void init()$/;"	f	class:ChorusII
+init	Chorus.h	/^		void init()$/;"	f	class:StereoChorusI
+init	Chorus.h	/^		void init()$/;"	f	class:StereoChorusII
+init	Click.cc	/^CEO::init()$/;"	f	class:CEO
+init	Click.cc	/^Click::init()$/;"	f	class:Click
+init	Click.cc	/^ClickStub::init (float * _wave, int _N)$/;"	f	class:ClickStub
+init	Click.cc	/^Dirac::init()$/;"	f	class:Dirac
+init	Clip.cc	/^Clip::init()$/;"	f	class:Clip
+init	Compress.h	/^		void init() {}$/;"	f	class:Compress
+init	Eq.cc	/^Eq2x2::init()$/;"	f	class:Eq2x2
+init	Eq.cc	/^Eq::init()$/;"	f	class:Eq
+init	HRTF.cc	/^HRTF::init()$/;"	f	class:HRTF
+init	Lorenz.cc	/^Lorenz::init()$/;"	f	class:Lorenz
+init	Pan.cc	/^Pan::init()$/;"	f	class:Pan
+init	Phaser.h	/^		void init()$/;"	f	class:PhaserI
+init	Phaser.h	/^		void init()$/;"	f	class:PhaserII
+init	Preamp.cc	/^PreampIII::init()$/;"	f	class:PreampIII
+init	Preamp.cc	/^PreampIV::init()$/;"	f	class:PreampIV
+init	Reverb.cc	/^JVRev::init()$/;"	f	class:JVRev
+init	Reverb.cc	/^PlateStub::init()$/;"	f	class:PlateStub
+init	Reverb.h	/^		void init (int n, int w)$/;"	f	class:ModLattice
+init	Roessler.cc	/^Roessler::init()$/;"	f	class:Roessler
+init	Scape.h	/^		void init()$/;"	f	class:Scape
+init	Sin.cc	/^Sin::init()$/;"	f	class:Sin
+init	SweepVF.cc	/^AutoWah::init()$/;"	f	class:AutoWah
+init	SweepVF.cc	/^SweepVFI::init()$/;"	f	class:SweepVFI
+init	SweepVF.cc	/^SweepVFII::init()$/;"	f	class:SweepVFII
+init	ToneControls.cc	/^ToneControls::init (double fs)$/;"	f	class:ToneControls
+init	ToneStack.h	/^		void init()$/;"	f	class:ToneStack
+init	ToneStack.h	/^		void init()$/;"	f	class:ToneStackLT
+init	VCO.cc	/^VCOd::init()$/;"	f	class:VCOd
+init	VCO.cc	/^VCOs::init()$/;"	f	class:VCOs
+init	White.h	/^		void init() {}$/;"	f	class:White
+init	dsp/Delay.h	/^		void init (int n)$/;"	f	class:DSP::Delay
+init	dsp/Eq.h	/^		void init (double fs, double Q)$/;"	f	class:DSP::Eq
+init	dsp/FIR.h	/^		void init (int N)$/;"	f	class:DSP::FIR
+init	dsp/FIR.h	/^		void init (int _n, int _over)$/;"	f	class:DSP::FIRUpsampler
+init	dsp/LatFilt.h	/^		void init (double fs)$/;"	f	class:DSP::LatFilt
+init	dsp/Lorenz.h	/^		void init (double _h = .001, double seed = .0)$/;"	f	class:DSP::Lorenz
+init	dsp/Roessler.h	/^		void init (double _h = .001, double seed = .0)$/;"	f	class:DSP::Roessler
+init	dsp/TDFII.h	/^		void init (double fs)$/;"	f	class:DSP::TDFII
+init	dsp/ToneStack.h	/^		void init (double _fs)$/;"	f	class:DSP::ToneStack
+init	dsp/ToneStack.h	/^		void init (double _fs)$/;"	f	class:DSP::ToneStackLT
+init	dsp/White.h	/^		void init (float f)$/;"	f	class:DSP::White
+init_band	dsp/Eq.h	/^		void init_band (int i, double theta, double Q)$/;"	f	class:DSP::Eq
+input	Reverb.h	/^		} input;$/;"	m	class:PlateStub	typeref:struct:PlateStub::__anon17
+instantiate	ladspa.h	/^  LADSPA_Handle (*instantiate)(const struct _LADSPA_Descriptor * Descriptor,$/;"	m	struct:_LADSPA_Descriptor
+int16	basics.h	/^typedef __int16_t			int16;$/;"	t
+int32	basics.h	/^typedef __int32_t			int32;$/;"	t
+int64	basics.h	/^typedef __int64_t			int64;$/;"	t
+int8	basics.h	/^typedef __int8_t			int8;$/;"	t
+is_denormal	basics.h	/^is_denormal (double & f)$/;"	f
+is_denormal	basics.h	/^is_denormal (float & f)$/;"	f
+isprime	dsp/util.h	/^isprime (int v)$/;"	f	namespace:DSP
+k	ToneStack.cc	39;"	d	file:
+k	ToneStack.cc	61;"	d	file:
+kaiser	dsp/windows.h	/^kaiser (d_sample * s, int n, double beta)$/;"	f	namespace:DSP
+kcoef	dsp/LatFilt.h	/^		double kcoef[ORDER];$/;"	m	class:DSP::LatFilt
+kcoef	dsp/ToneStack.h	/^		double *kcoef;$/;"	m	class:DSP::ToneStackLT
+kf	dsp/LatFilt.h	/^		double kf[ORDER];$/;"	m	class:DSP::LatFilt
+ladspa_descriptor	interface.cc	/^ladspa_descriptor (unsigned long i)$/;"	f
+lattice	Reverb.h	/^			Lattice lattice[2];$/;"	m	struct:PlateStub::__anon18
+lattice	Reverb.h	/^			Lattice lattice[4];$/;"	m	struct:PlateStub::__anon17
+left	Chorus.h	/^		} left, right;$/;"	m	class:StereoChorusI	typeref:struct:StereoChorusI::__anon7
+left	Chorus.h	/^		} left, right;$/;"	m	class:StereoChorusII	typeref:struct:StereoChorusII::__anon9
+left	HRTF.h	/^		} left, right;$/;"	m	class:HRTF	typeref:struct:HRTF::__anon14
+left	Reverb.h	/^		DSP::Delay left, right;$/;"	m	class:JVRev
+left	elev0.h	/^	struct {double a[31], b[31];} left, right;$/;"	m	struct:__anon11	typeref:struct:__anon11::__anon12
+length	Reverb.h	/^		int length [9];$/;"	m	class:JVRev
+lfo	Chorus.h	/^			DSP::Sine lfo;$/;"	m	struct:StereoChorusI::__anon7
+lfo	Chorus.h	/^		DSP::Sine lfo;$/;"	m	class:ChorusI
+lfo	Phaser.h	/^		DSP::Sine lfo;$/;"	m	class:PhaserI
+lfo	Reverb.h	/^		DSP::Sine lfo;$/;"	m	class:ModLattice
+lfo	Scape.h	/^		DSP::Lorenz lfo[2];$/;"	m	class:Scape
+lfo_lp	Chorus.h	/^			DSP::OnePoleLP lfo_lp;$/;"	m	struct:StereoChorusII::__anon9
+lin2db	dsp/util.h	/^lin2db (double lin)$/;"	f	namespace:DSP
+lo	dsp/SVF.h	/^		d_sample lo, band, hi;$/;"	m	class:DSP::SVF
+lorenz	Lorenz.h	/^		DSP::Lorenz lorenz;$/;"	m	class:Lorenz
+lorenz	Phaser.h	/^		DSP::Lorenz lorenz;$/;"	m	class:PhaserII
+lorenz	SweepVF.h	/^		DSP::Lorenz lorenz;$/;"	m	class:SweepVFI
+lorenz1	SweepVF.h	/^		DSP::Lorenz lorenz1;$/;"	m	class:SweepVFII
+lorenz2	SweepVF.h	/^		DSP::Lorenz lorenz2;$/;"	m	class:SweepVFII
+lp	Chorus.h	/^		DSP::OnePoleLP lp;$/;"	m	class:FracTap
+lp	Click.h	/^		DSP::OnePoleLP lp;$/;"	m	class:ClickStub
+m	Phaser.h	/^		d_sample a, m;$/;"	m	class:PhaserAP
+m	dsp/FIR.h	/^		int n, m;$/;"	m	class:DSP::FIR
+m	dsp/FIR.h	/^		int n, m;$/;"	m	class:DSP::FIRUpsampler
+make_direct_I	dsp/RBJ.h	/^		void make_direct_I (T * ca, T * cb)$/;"	f	class:DSP::RBJ::RBJ
+max	basics.h	/^X max (X x, Y y)$/;"	f
+min	basics.h	/^X min (X x, Y y)$/;"	f
+mlattice	Reverb.h	/^			ModLattice mlattice[2];$/;"	m	struct:PlateStub::__anon18
+model	Cabinet.h	/^		int model;$/;"	m	class:CabinetI
+model	Cabinet.h	/^		int model;$/;"	m	class:CabinetII
+model	dsp/ToneStack.h	/^		int model;$/;"	m	class:DSP::ToneStack
+models	Cabinet.cc	/^CabinetI::models [] = $/;"	m	class:CabinetI	file:
+models	Cabinet.h	/^		Model32 * models;$/;"	m	class:CabinetII
+models	Cabinet.h	/^		static Model16 models [];$/;"	m	class:CabinetI
+models44100	Cabinet-Models32.h	/^CabinetII::models44100 [] = { $/;"	m	class:CabinetII
+models44100	Cabinet.h	/^		static Model32 models44100 [];$/;"	m	class:CabinetII
+models48000	Cabinet-Models32.h	/^CabinetII::models48000 [] = { $/;"	m	class:CabinetII
+models48000	Cabinet.h	/^		static Model32 models48000 [];$/;"	m	class:CabinetII
+models88200	Cabinet-Models32.h	/^CabinetII::models88200 [] = { $/;"	m	class:CabinetII
+models88200	Cabinet.h	/^		static Model32 models88200 [];$/;"	m	class:CabinetII
+models96000	Cabinet-Models32.h	/^CabinetII::models96000 [] = { $/;"	m	class:CabinetII
+models96000	Cabinet.h	/^		static Model32 models96000 [];$/;"	m	class:CabinetII
+n	Cabinet.h	/^		int n, h;$/;"	m	class:CabinetI
+n	Cabinet.h	/^		int n, h;$/;"	m	class:CabinetII
+n	Cabinet.h	/^	int n;$/;"	m	struct:__anon5
+n	Cabinet.h	/^	int n;$/;"	m	struct:__anon6
+n	HRTF.h	/^		int n, h;$/;"	m	class:HRTF
+n	dsp/FIR.h	/^		int n, m;$/;"	m	class:DSP::FIR
+n	dsp/FIR.h	/^		int n, m;$/;"	m	class:DSP::FIRUpsampler
+n0	Reverb.h	/^		float n0, width;$/;"	m	class:ModLattice
+nF	ToneStack.cc	41;"	d	file:
+nF	ToneStack.cc	63;"	d	file:
+n_presets	ToneStack.cc	/^int DSP::ToneStack::n_presets = TS_N_PRESETS;$/;"	m	class:DSP::ToneStack	file:
+n_presets	dsp/ToneStack.h	/^		static int n_presets;$/;"	m	class:DSP::ToneStack
+name	basics.h	/^	char * name;$/;"	m	struct:__anon4
+next_power_of_2	dsp/util.h	/^inline int next_power_of_2 (int n)$/;"	f	namespace:DSP
+normal	basics.h	/^		d_sample normal; \/* renormal constant *\/$/;"	m	class:Plugin
+normal	dsp/Eq.h	/^		eq_sample normal;$/;"	m	class:DSP::Eq
+one_cycle	Amp.cc	/^AmpIII::one_cycle (int frames)$/;"	f	class:AmpIII
+one_cycle	Amp.cc	/^AmpIV::one_cycle (int frames)$/;"	f	class:AmpIV
+one_cycle	Amp.cc	/^AmpV::one_cycle (int frames)$/;"	f	class:AmpV
+one_cycle	Amp.cc	/^AmpVTS::one_cycle (int frames)$/;"	f	class:AmpVTS
+one_cycle	Cabinet.cc	/^CabinetI::one_cycle (int frames)$/;"	f	class:CabinetI
+one_cycle	Cabinet.cc	/^CabinetII::one_cycle (int frames)$/;"	f	class:CabinetII
+one_cycle	Chorus.cc	/^ChorusI::one_cycle (int frames)$/;"	f	class:ChorusI
+one_cycle	Chorus.cc	/^ChorusII::one_cycle (int frames)$/;"	f	class:ChorusII
+one_cycle	Chorus.cc	/^StereoChorusI::one_cycle (int frames)$/;"	f	class:StereoChorusI
+one_cycle	Chorus.cc	/^StereoChorusII::one_cycle (int frames)$/;"	f	class:StereoChorusII
+one_cycle	Click.cc	/^ClickStub::one_cycle (int frames)$/;"	f	class:ClickStub
+one_cycle	Clip.cc	/^Clip::one_cycle (int frames)$/;"	f	class:Clip
+one_cycle	Compress.cc	/^Compress::one_cycle (int frames)$/;"	f	class:Compress
+one_cycle	Eq.cc	/^Eq2x2::one_cycle (int frames)$/;"	f	class:Eq2x2
+one_cycle	Eq.cc	/^Eq::one_cycle (int frames)$/;"	f	class:Eq
+one_cycle	HRTF.cc	/^HRTF::one_cycle (int frames)$/;"	f	class:HRTF
+one_cycle	Lorenz.cc	/^Lorenz::one_cycle (int frames)$/;"	f	class:Lorenz
+one_cycle	Pan.cc	/^Pan::one_cycle (int frames)$/;"	f	class:Pan
+one_cycle	Phaser.cc	/^PhaserI::one_cycle (int frames)$/;"	f	class:PhaserI
+one_cycle	Phaser.cc	/^PhaserII::one_cycle (int frames)$/;"	f	class:PhaserII
+one_cycle	Preamp.cc	/^PreampIII::one_cycle (int frames)$/;"	f	class:PreampIII
+one_cycle	Preamp.cc	/^PreampIV::one_cycle (int frames)$/;"	f	class:PreampIV
+one_cycle	Reverb.cc	/^JVRev::one_cycle (int frames)$/;"	f	class:JVRev
+one_cycle	Reverb.cc	/^Plate2x2::one_cycle (int frames)$/;"	f	class:Plate2x2
+one_cycle	Reverb.cc	/^Plate::one_cycle (int frames)$/;"	f	class:Plate
+one_cycle	Roessler.cc	/^Roessler::one_cycle (int frames)$/;"	f	class:Roessler
+one_cycle	Scape.cc	/^Scape::one_cycle (int frames)$/;"	f	class:Scape
+one_cycle	Sin.cc	/^Sin::one_cycle (int frames)$/;"	f	class:Sin
+one_cycle	SweepVF.cc	/^AutoWah::one_cycle (int frames)$/;"	f	class:AutoWah
+one_cycle	SweepVF.cc	/^SweepVFI::one_cycle (int frames)$/;"	f	class:SweepVFI
+one_cycle	SweepVF.cc	/^SweepVFII::one_cycle (int frames)$/;"	f	class:SweepVFII
+one_cycle	ToneStack.cc	/^ToneStack::one_cycle (int frames)$/;"	f	class:ToneStack
+one_cycle	ToneStack.cc	/^ToneStackLT::one_cycle (int frames)$/;"	f	class:ToneStackLT
+one_cycle	VCO.cc	/^VCOd::one_cycle (int frames)$/;"	f	class:VCOd
+one_cycle	VCO.cc	/^VCOs::one_cycle (int frames)$/;"	f	class:VCOs
+one_cycle	White.cc	/^White::one_cycle (int frames)$/;"	f	class:White
+one_cycle	dsp/SVF.h	/^		void one_cycle (d_sample * s, int frames)$/;"	f	class:DSP::SVF
+operator []	dsp/Delay.h	/^		operator [] (int i)$/;"	f	class:DSP::Delay
+out	dsp/SVF.h	/^		d_sample * out;$/;"	m	class:DSP::SVF
+over	dsp/FIR.h	/^		int over;$/;"	m	class:DSP::FIRUpsampler
+pF	ToneStack.cc	42;"	d	file:
+pF	ToneStack.cc	64;"	d	file:
+pad	dsp/FIR.h	/^		inline d_sample pad (int Z)$/;"	f	class:DSP::FIRUpsampler
+pan	HRTF.h	/^		int pan;$/;"	m	class:HRTF
+pan	Pan.h	/^		d_sample pan;$/;"	m	class:Pan
+period	Click.h	/^		int period; \/* frames remaining in period *\/$/;"	m	class:ClickStub
+period	Scape.h	/^		double period;$/;"	m	class:Scape
+phase	Chorus.h	/^		d_sample phase;$/;"	m	class:StereoChorusI
+phase	Chorus.h	/^		d_sample phase;$/;"	m	class:StereoChorusII
+phase	dsp/VCO.h	/^		double phase, inc;$/;"	m	class:DSP::TriSaw
+phase	dsp/VCO.h	/^		double phase, inc;$/;"	m	class:DSP::TriSawSquare
+played	Click.h	/^		int played; \/* frames played from sample *\/$/;"	m	class:ClickStub
+port_info	Amp.cc	/^AmpIII::port_info [] = $/;"	m	class:AmpIII	file:
+port_info	Amp.cc	/^AmpIV::port_info [] = $/;"	m	class:AmpIV	file:
+port_info	Amp.cc	/^AmpV::port_info [] = $/;"	m	class:AmpV	file:
+port_info	Amp.cc	/^AmpVTS::port_info [] = $/;"	m	class:AmpVTS	file:
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:AmpIII
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:AmpIV
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:AmpV
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:AmpVTS
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:PreampIII
+port_info	Amp.h	/^		static PortInfo port_info[];$/;"	m	class:PreampIV
+port_info	Cabinet.cc	/^CabinetI::port_info [] =$/;"	m	class:CabinetI	file:
+port_info	Cabinet.cc	/^CabinetII::port_info [] =$/;"	m	class:CabinetII	file:
+port_info	Cabinet.h	/^		static PortInfo port_info [];$/;"	m	class:CabinetI
+port_info	Cabinet.h	/^		static PortInfo port_info [];$/;"	m	class:CabinetII
+port_info	Chorus.cc	/^ChorusI::port_info [] =$/;"	m	class:ChorusI	file:
+port_info	Chorus.cc	/^ChorusII::port_info [] =$/;"	m	class:ChorusII	file:
+port_info	Chorus.cc	/^StereoChorusI::port_info [] =$/;"	m	class:StereoChorusI	file:
+port_info	Chorus.cc	/^StereoChorusII::port_info [] =$/;"	m	class:StereoChorusII	file:
+port_info	Chorus.h	/^		static PortInfo port_info [];$/;"	m	class:ChorusI
+port_info	Chorus.h	/^		static PortInfo port_info [];$/;"	m	class:ChorusII
+port_info	Chorus.h	/^		static PortInfo port_info [];$/;"	m	class:StereoChorusI
+port_info	Chorus.h	/^		static PortInfo port_info [];$/;"	m	class:StereoChorusII
+port_info	Click.cc	/^CEO::port_info [] =$/;"	m	class:CEO	file:
+port_info	Click.cc	/^ClickStub::port_info [] =$/;"	m	class:ClickStub	file:
+port_info	Click.cc	/^Dirac::port_info [] =$/;"	m	class:Dirac	file:
+port_info	Click.h	/^		static PortInfo port_info [];$/;"	m	class:CEO
+port_info	Click.h	/^		static PortInfo port_info [];$/;"	m	class:ClickStub
+port_info	Click.h	/^		static PortInfo port_info [];$/;"	m	class:Dirac
+port_info	Clip.cc	/^Clip::port_info [] = $/;"	m	class:Clip	file:
+port_info	Clip.h	/^		static PortInfo port_info[];$/;"	m	class:Clip
+port_info	Compress.cc	/^Compress::port_info [] =$/;"	m	class:Compress	file:
+port_info	Compress.h	/^		static PortInfo port_info [];$/;"	m	class:Compress
+port_info	Eq.cc	/^Eq2x2::port_info [] =$/;"	m	class:Eq2x2	file:
+port_info	Eq.cc	/^Eq::port_info [] =$/;"	m	class:Eq	file:
+port_info	Eq.h	/^		static PortInfo port_info [];$/;"	m	class:Eq
+port_info	Eq.h	/^		static PortInfo port_info [];$/;"	m	class:Eq2x2
+port_info	HRTF.cc	/^HRTF::port_info [] =$/;"	m	class:HRTF	file:
+port_info	HRTF.h	/^		static PortInfo port_info [];$/;"	m	class:HRTF
+port_info	Lorenz.cc	/^Lorenz::port_info [] =$/;"	m	class:Lorenz	file:
+port_info	Lorenz.h	/^		static PortInfo port_info [];$/;"	m	class:Lorenz
+port_info	Pan.cc	/^Pan::port_info [] =$/;"	m	class:Pan	file:
+port_info	Pan.h	/^		static PortInfo port_info [];$/;"	m	class:Pan
+port_info	Phaser.cc	/^PhaserI::port_info [] =$/;"	m	class:PhaserI	file:
+port_info	Phaser.cc	/^PhaserII::port_info [] =$/;"	m	class:PhaserII	file:
+port_info	Phaser.h	/^		static PortInfo port_info [];$/;"	m	class:PhaserI
+port_info	Phaser.h	/^		static PortInfo port_info [];$/;"	m	class:PhaserII
+port_info	Preamp.cc	/^PreampIII::port_info [] = $/;"	m	class:PreampIII	file:
+port_info	Preamp.cc	/^PreampIV::port_info [] = $/;"	m	class:PreampIV	file:
+port_info	Reverb.cc	/^JVRev::port_info [] =$/;"	m	class:JVRev	file:
+port_info	Reverb.cc	/^Plate2x2::port_info [] =$/;"	m	class:Plate2x2	file:
+port_info	Reverb.cc	/^Plate::port_info [] =$/;"	m	class:Plate	file:
+port_info	Reverb.h	/^		static PortInfo port_info [];$/;"	m	class:JVRev
+port_info	Reverb.h	/^		static PortInfo port_info [];$/;"	m	class:Plate
+port_info	Reverb.h	/^		static PortInfo port_info [];$/;"	m	class:Plate2x2
+port_info	Roessler.cc	/^Roessler::port_info [] =$/;"	m	class:Roessler	file:
+port_info	Roessler.h	/^		static PortInfo port_info [];$/;"	m	class:Roessler
+port_info	Scape.cc	/^Scape::port_info [] =$/;"	m	class:Scape	file:
+port_info	Scape.h	/^		static PortInfo port_info [];$/;"	m	class:Scape
+port_info	Sin.cc	/^Sin::port_info [] =$/;"	m	class:Sin	file:
+port_info	Sin.h	/^		static PortInfo port_info [];$/;"	m	class:Sin
+port_info	SweepVF.cc	/^AutoWah::port_info [] =$/;"	m	class:AutoWah	file:
+port_info	SweepVF.cc	/^SweepVFI::port_info [] =$/;"	m	class:SweepVFI	file:
+port_info	SweepVF.cc	/^SweepVFII::port_info [] =$/;"	m	class:SweepVFII	file:
+port_info	SweepVF.h	/^		static PortInfo port_info [];$/;"	m	class:AutoWah
+port_info	SweepVF.h	/^		static PortInfo port_info [];$/;"	m	class:SweepVFI
+port_info	SweepVF.h	/^		static PortInfo port_info [];$/;"	m	class:SweepVFII
+port_info	ToneStack.cc	/^ToneStack::port_info [] = $/;"	m	class:ToneStack	file:
+port_info	ToneStack.cc	/^ToneStackLT::port_info [] = $/;"	m	class:ToneStackLT	file:
+port_info	ToneStack.h	/^		static PortInfo port_info [];$/;"	m	class:ToneStack
+port_info	ToneStack.h	/^		static PortInfo port_info [];$/;"	m	class:ToneStackLT
+port_info	VCO.cc	/^VCOd::port_info [] =$/;"	m	class:VCOd	file:
+port_info	VCO.cc	/^VCOs::port_info [] =$/;"	m	class:VCOs	file:
+port_info	VCO.h	/^		static PortInfo port_info[];$/;"	m	class:VCOd
+port_info	VCO.h	/^		static PortInfo port_info[];$/;"	m	class:VCOs
+port_info	White.cc	/^White::port_info [] =$/;"	m	class:White	file:
+port_info	White.h	/^		static PortInfo port_info [];$/;"	m	class:White
+ports	basics.h	/^		d_sample ** ports;$/;"	m	class:Plugin
+power_cap	Amp.h	/^		DSP::BiQuad power_cap[2];$/;"	m	class:AmpV
+power_cap	Amp.h	/^		DSP::BiQuad power_cap[2];$/;"	m	class:AmpVTS
+power_transfer	Amp.h	/^		inline d_sample power_transfer (d_sample a)$/;"	f	class:AmpStub
+presets	ToneStack.cc	/^DSP::ToneStack::presets[] = {$/;"	m	class:DSP::ToneStack	file:
+presets	dsp/ToneStack.h	/^		static TSParameters presets[]; \/* in ..\/ToneStack.cc *\/$/;"	m	class:DSP::ToneStack
+process	Amp.h	/^		inline d_sample process (d_sample x)$/;"	f	class:ToneControls
+process	Phaser.h	/^		d_sample process (d_sample x)$/;"	f	class:PhaserAP
+process	Reverb.cc	/^PlateStub::process (d_sample x, d_sample decay, d_sample * _xl, d_sample * _xr)$/;"	f	class:PlateStub
+process	Reverb.h	/^		process (d_sample x)$/;"	f	class:JVComb
+process	Reverb.h	/^		process (d_sample x, double d)$/;"	f	class:Lattice
+process	Reverb.h	/^		process (d_sample x, double d)$/;"	f	class:ModLattice
+process	dsp/BiQuad.h	/^		inline d_sample process (d_sample s)$/;"	f	class:DSP::BiQuad
+process	dsp/Eq.h	/^		eq_sample process (eq_sample s)$/;"	f	class:DSP::Eq
+process	dsp/FIR.h	/^		inline d_sample process (d_sample s)$/;"	f	class:DSP::FIR
+process	dsp/LatFilt.h	/^		d_sample process (d_sample s) {$/;"	f	class:DSP::LatFilt
+process	dsp/OnePole.h	/^		inline d_sample process (d_sample x)$/;"	f	class:DSP::OnePoleHP
+process	dsp/OnePole.h	/^		inline d_sample process (d_sample x)$/;"	f	class:DSP::OnePoleLP
+process	dsp/RMS.h	/^		d_sample process (d_sample x)$/;"	f	class:DSP::RMS
+process	dsp/SVF.h	/^		d_sample process (d_sample x)$/;"	f	class:DSP::SVF
+process	dsp/SVF.h	/^		d_sample process (d_sample x)$/;"	f	class:DSP::StackedSVF
+process	dsp/TDFII.h	/^		d_sample process (d_sample s)$/;"	f	class:DSP::TDFII
+process	dsp/ToneStack.h	/^		inline d_sample process (d_sample x)$/;"	f	class:DSP::ToneStack
+process	dsp/ToneStack.h	/^		inline d_sample process (d_sample x)$/;"	f	class:DSP::ToneStackLT
+process_0_1	dsp/BiQuad.h	/^		inline d_sample process_0_1()$/;"	f	class:DSP::BiQuad
+process_0_2	dsp/BiQuad.h	/^		inline d_sample process_0_2()$/;"	f	class:DSP::BiQuad
+process_0_3	dsp/BiQuad.h	/^		inline d_sample process_0_3()$/;"	f	class:DSP::BiQuad
+processor_specific_denormal_measures	Descriptor.h	/^processor_specific_denormal_measures()$/;"	f
+put	dsp/Delay.h	/^		put (d_sample x)$/;"	f	class:DSP::Delay
+putget	dsp/Delay.h	/^		putget (d_sample x)$/;"	f	class:DSP::Delay
+q	dsp/SVF.h	/^		d_sample f, q, qnorm;$/;"	m	class:DSP::SVF
+qnorm	dsp/SVF.h	/^		d_sample f, q, qnorm;$/;"	m	class:DSP::SVF
+r12AX7	dsp/r12ax7.h	/^namespace r12AX7 {$/;"	n
+range	Phaser.h	/^			double bottom, range;$/;"	m	struct:PhaserI::__anon15
+range	Phaser.h	/^			double bottom, range;$/;"	m	struct:PhaserII::__anon16
+range	basics.h	/^	LADSPA_PortRangeHint range;$/;"	m	struct:__anon4
+ranges	Descriptor.h	/^		LADSPA_PortRangeHint * ranges;$/;"	m	class:Descriptor
+ranges	basics.h	/^		LADSPA_PortRangeHint * ranges; \/* for getport() below *\/$/;"	m	class:Plugin
+rate	Chorus.h	/^		d_sample rate;$/;"	m	class:StereoChorusI
+rate	Chorus.h	/^		d_sample rate;$/;"	m	class:StereoChorusII
+rate	Chorus.h	/^		d_sample time, width, rate;$/;"	m	class:ChorusStub
+rate	Phaser.h	/^		d_sample rate;$/;"	m	class:PhaserI
+rate	Phaser.h	/^		d_sample rate;$/;"	m	class:PhaserII
+read	dsp/Delay.h	/^		int read, write;$/;"	m	class:DSP::Delay
+remain	Phaser.h	/^		int blocksize, remain;$/;"	m	class:PhaserI
+remain	Phaser.h	/^		int blocksize, remain;$/;"	m	class:PhaserII
+reset	Pan.h	/^		void reset (double c)$/;"	f	class:PanTap
+reset	Reverb.h	/^		void reset()$/;"	f	class:ModLattice
+reset	dsp/BiQuad.h	/^		void reset()$/;"	f	class:DSP::BiQuad
+reset	dsp/Delay.h	/^		void reset()$/;"	f	class:DSP::Delay
+reset	dsp/Delay.h	/^		void reset()$/;"	f	class:DSP::DelayTapA
+reset	dsp/Eq.h	/^		void reset()$/;"	f	class:DSP::Eq
+reset	dsp/FIR.h	/^		void reset()$/;"	f	class:DSP::FIR
+reset	dsp/FIR.h	/^		void reset()$/;"	f	class:DSP::FIRUpsampler
+reset	dsp/LatFilt.h	/^		void reset() $/;"	f	class:DSP::LatFilt
+reset	dsp/OnePole.h	/^		inline void reset()$/;"	f	class:DSP::OnePoleLP
+reset	dsp/OnePole.h	/^		void reset()$/;"	f	class:DSP::OnePoleHP
+reset	dsp/RMS.h	/^		void reset()$/;"	f	class:DSP::RMS
+reset	dsp/SVF.h	/^		void reset()$/;"	f	class:DSP::SVF
+reset	dsp/SVF.h	/^		void reset()$/;"	f	class:DSP::StackedSVF
+reset	dsp/TDFII.h	/^		void reset() $/;"	f	class:DSP::TDFII
+reset	dsp/VCO.h	/^		void reset()$/;"	f	class:DSP::TriSawSquare
+reset	dsp/VCO.h	/^		void reset()$/;"	f	class:DSP::VCO2
+right	Chorus.h	/^		} left, right;$/;"	m	class:StereoChorusI	typeref:struct:StereoChorusI::__anon7
+right	Chorus.h	/^		} left, right;$/;"	m	class:StereoChorusII	typeref:struct:StereoChorusII::__anon9
+right	HRTF.h	/^		} left, right;$/;"	m	class:HRTF	typeref:struct:HRTF::__anon14
+right	Reverb.h	/^		DSP::Delay left, right;$/;"	m	class:JVRev
+right	elev0.h	/^	struct {double a[31], b[31];} left, right;$/;"	m	struct:__anon11	typeref:struct:__anon11::__anon12
+rms	Compress.h	/^		DSP::RMS rms;$/;"	m	class:Compress
+rms	SweepVF.h	/^		DSP::RMS rms;$/;"	m	class:AutoWah
+rms	dsp/RMS.h	/^		d_sample rms()$/;"	f	class:DSP::RMS
+roessler	Roessler.h	/^		DSP::Roessler roessler;$/;"	m	class:Roessler
+run	Amp.h	/^		void run (int n)$/;"	f	class:AmpIII
+run	Amp.h	/^		void run (int n)$/;"	f	class:AmpIV
+run	Amp.h	/^		void run (int n)$/;"	f	class:AmpV
+run	Amp.h	/^		void run (int n)$/;"	f	class:AmpVTS
+run	Amp.h	/^		void run (int n)$/;"	f	class:PreampIII
+run	Amp.h	/^		void run (int n)$/;"	f	class:PreampIV
+run	Cabinet.h	/^		void run (int n)$/;"	f	class:CabinetI
+run	Cabinet.h	/^		void run (int n)$/;"	f	class:CabinetII
+run	Chorus.h	/^		void run (int n)$/;"	f	class:ChorusI
+run	Chorus.h	/^		void run (int n)$/;"	f	class:ChorusII
+run	Chorus.h	/^		void run (int n)$/;"	f	class:StereoChorusI
+run	Chorus.h	/^		void run (int n)$/;"	f	class:StereoChorusII
+run	Click.h	/^		void run (int n)$/;"	f	class:ClickStub
+run	Clip.h	/^		void run (int n)$/;"	f	class:Clip
+run	Compress.h	/^		void run (int n)$/;"	f	class:Compress
+run	Eq.h	/^		void run (int n)$/;"	f	class:Eq
+run	Eq.h	/^		void run (int n)$/;"	f	class:Eq2x2
+run	HRTF.h	/^		void run (int n)$/;"	f	class:HRTF
+run	Lorenz.h	/^		void run (int n)$/;"	f	class:Lorenz
+run	Pan.h	/^		void run (int n)$/;"	f	class:Pan
+run	Phaser.h	/^		void run (int n)$/;"	f	class:PhaserI
+run	Phaser.h	/^		void run (int n)$/;"	f	class:PhaserII
+run	Reverb.h	/^		void run (int n)$/;"	f	class:JVRev
+run	Reverb.h	/^		void run (int n)$/;"	f	class:Plate
+run	Reverb.h	/^		void run (int n)$/;"	f	class:Plate2x2
+run	Roessler.h	/^		void run (int n)$/;"	f	class:Roessler
+run	Scape.h	/^		void run (int n)$/;"	f	class:Scape
+run	Sin.h	/^		void run (int n)$/;"	f	class:Sin
+run	SweepVF.h	/^		void run (int n)$/;"	f	class:AutoWah
+run	SweepVF.h	/^		void run (int n)$/;"	f	class:SweepVFI
+run	SweepVF.h	/^		void run (int n)$/;"	f	class:SweepVFII
+run	ToneStack.h	/^		void run (int n)$/;"	f	class:ToneStack
+run	ToneStack.h	/^		void run (int n)$/;"	f	class:ToneStackLT
+run	VCO.h	/^		void run (int n)$/;"	f	class:VCOd
+run	VCO.h	/^		void run (int n)$/;"	f	class:VCOs
+run	White.h	/^		void run (int n)$/;"	f	class:White
+run	ladspa.h	/^  void (*run)(LADSPA_Handle Instance,$/;"	m	struct:_LADSPA_Descriptor
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:AmpIII
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:AmpIV
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:AmpV
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:AmpVTS
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:PreampIII
+run_adding	Amp.h	/^		void run_adding (int n)$/;"	f	class:PreampIV
+run_adding	Cabinet.h	/^		void run_adding (int n)$/;"	f	class:CabinetI
+run_adding	Cabinet.h	/^		void run_adding (int n)$/;"	f	class:CabinetII
+run_adding	Chorus.h	/^		void run_adding (int n)$/;"	f	class:ChorusI
+run_adding	Chorus.h	/^		void run_adding (int n)$/;"	f	class:ChorusII
+run_adding	Chorus.h	/^		void run_adding (int n)$/;"	f	class:StereoChorusI
+run_adding	Chorus.h	/^		void run_adding (int n)$/;"	f	class:StereoChorusII
+run_adding	Click.h	/^		void run_adding (int n)$/;"	f	class:ClickStub
+run_adding	Clip.h	/^		void run_adding (int n)$/;"	f	class:Clip
+run_adding	Compress.h	/^		void run_adding (int n)$/;"	f	class:Compress
+run_adding	Eq.h	/^		void run_adding (int n)$/;"	f	class:Eq
+run_adding	Eq.h	/^		void run_adding (int n)$/;"	f	class:Eq2x2
+run_adding	HRTF.h	/^		void run_adding (int n)$/;"	f	class:HRTF
+run_adding	Lorenz.h	/^		void run_adding (int n)$/;"	f	class:Lorenz
+run_adding	Pan.h	/^		void run_adding (int n)$/;"	f	class:Pan
+run_adding	Phaser.h	/^		void run_adding (int n)$/;"	f	class:PhaserI
+run_adding	Phaser.h	/^		void run_adding (int n)$/;"	f	class:PhaserII
+run_adding	Reverb.h	/^		void run_adding (int n)$/;"	f	class:JVRev
+run_adding	Reverb.h	/^		void run_adding (int n)$/;"	f	class:Plate
+run_adding	Reverb.h	/^		void run_adding (int n)$/;"	f	class:Plate2x2
+run_adding	Roessler.h	/^		void run_adding (int n)$/;"	f	class:Roessler
+run_adding	Scape.h	/^		void run_adding (int n)$/;"	f	class:Scape
+run_adding	Sin.h	/^		void run_adding (int n)$/;"	f	class:Sin
+run_adding	SweepVF.h	/^		void run_adding (int n)$/;"	f	class:AutoWah
+run_adding	SweepVF.h	/^		void run_adding (int n)$/;"	f	class:SweepVFI
+run_adding	SweepVF.h	/^		void run_adding (int n)$/;"	f	class:SweepVFII
+run_adding	ToneStack.h	/^		void run_adding (int n)$/;"	f	class:ToneStack
+run_adding	ToneStack.h	/^		void run_adding (int n)$/;"	f	class:ToneStackLT
+run_adding	VCO.h	/^		void run_adding (int n)$/;"	f	class:VCOd
+run_adding	VCO.h	/^		void run_adding (int n)$/;"	f	class:VCOs
+run_adding	White.h	/^		void run_adding (int n)$/;"	f	class:White
+run_adding	ladspa.h	/^  void (*run_adding)(LADSPA_Handle Instance,$/;"	m	struct:_LADSPA_Descriptor
+sample_func_t	basics.h	/^typedef void (*sample_func_t) (d_sample *, int, d_sample, d_sample);$/;"	t
+scale	dsp/TwelveAX7.h	/^		tube_sample scale;$/;"	m	class:DSP::NoTwelveAX7
+scale	dsp/TwelveAX7.h	/^		tube_sample scale;$/;"	m	class:DSP::TwelveAX7
+scale	dsp/TwelveAX7.h	/^		tube_sample scale;$/;"	m	class:DSP::TwelveAX7_2
+scale	dsp/TwelveAX7.h	/^		tube_sample scale;$/;"	m	class:DSP::TwelveAX7_3
+seed	interface.cc	/^seed()$/;"	f	file:
+set	Phaser.h	/^		void set (double delay)$/;"	f	class:PhaserAP
+set	dsp/OnePole.h	/^		inline void set (double d)$/;"	f	class:DSP::OnePoleHP
+set	dsp/OnePole.h	/^		inline void set (double d)$/;"	f	class:DSP::OnePoleLP
+set_band_gain	ToneControls.cc	/^ToneControls::set_band_gain (int i, float g)$/;"	f	class:ToneControls
+set_blend	dsp/VCO.h	/^		inline void set_blend (float b)$/;"	f	class:DSP::VCO2
+set_clips	dsp/TwelveAX7.h	/^		inline void set_clips()$/;"	f	class:DSP::TwelveAX7
+set_f	dsp/OnePole.h	/^		inline void set_f (double fc)$/;"	f	class:DSP::OnePoleLP
+set_f	dsp/OnePole.h	/^		void set_f (double f)$/;"	f	class:DSP::OnePoleHP
+set_f	dsp/Sine.h	/^		inline void set_f (double f, double fs, double phase)$/;"	f	class:DSP::Sine
+set_f	dsp/Sine.h	/^		inline void set_f (double w, double phase)$/;"	f	class:DSP::Sine
+set_f	dsp/VCO.h	/^		inline void set_f (double f, double fs)$/;"	f	class:DSP::TriSaw
+set_f	dsp/VCO.h	/^		inline void set_f (double f, double fs)$/;"	f	class:DSP::TriSawSquare
+set_f	dsp/VCO.h	/^		void set_f (double f, double fs, double detune)$/;"	f	class:DSP::VCO2
+set_f_Q	dsp/SVF.h	/^		void set_f_Q (double f, double Q)$/;"	f	class:DSP::StackedSVF
+set_f_Q	dsp/SVF.h	/^		void set_f_Q (double fc, double Q)$/;"	f	class:DSP::SVF
+set_inc	dsp/VCO.h	/^		inline void set_inc (double i)$/;"	f	class:DSP::TriSaw
+set_inc	dsp/VCO.h	/^		inline void set_inc (double i)$/;"	f	class:DSP::TriSawSquare
+set_ki	dsp/LatFilt.h	/^		inline void set_ki(double coef, int i) {$/;"	f	class:DSP::LatFilt
+set_out	dsp/SVF.h	/^		void set_out (int o)$/;"	f	class:DSP::SVF
+set_out	dsp/SVF.h	/^		void set_out (int out)$/;"	f	class:DSP::StackedSVF
+set_pan	HRTF.cc	/^HRTF::set_pan (int p)$/;"	f	class:HRTF
+set_pan	Pan.cc	/^Pan::set_pan (d_sample p)$/;"	f	class:Pan
+set_rate	Chorus.h	/^		void set_rate (d_sample r)$/;"	f	class:ChorusII
+set_rate	Chorus.h	/^		void set_rate (d_sample r)$/;"	f	class:FracTap
+set_rate	Chorus.h	/^		void set_rate (d_sample r)$/;"	f	class:StereoChorusII
+set_rate	dsp/Lorenz.h	/^		void set_rate (double r)$/;"	f	class:DSP::Lorenz
+set_rate	dsp/Roessler.h	/^		void set_rate (double r)$/;"	f	class:DSP::Roessler
+set_run_adding_gain	ladspa.h	/^  void (*set_run_adding_gain)(LADSPA_Handle Instance,$/;"	m	struct:_LADSPA_Descriptor
+set_saw	dsp/VCO.h	/^		inline void set_saw (double t)$/;"	f	class:DSP::TriSaw
+set_saw_square	dsp/VCO.h	/^		inline void set_saw_square (float t, float s)$/;"	f	class:DSP::TriSawSquare
+set_sync	dsp/VCO.h	/^		inline void set_sync (TriSawSquare & tss, float p)$/;"	f	class:DSP::TriSawSquare
+set_sync	dsp/VCO.h	/^		inline void set_sync (float sync)$/;"	f	class:DSP::VCO2
+set_t60	Reverb.cc	/^JVRev::set_t60 (d_sample t)$/;"	f	class:JVRev
+set_vi	dsp/LatFilt.h	/^		inline void set_vi(double coef, int i) {$/;"	f	class:DSP::LatFilt
+setparams	dsp/ToneStack.h	/^		void setparams (TSParameters & p)$/;"	f	class:DSP::ToneStack
+setparams	dsp/ToneStack.h	/^		void setparams$/;"	f	class:DSP::ToneStackLT
+setup	Amp.cc	/^Descriptor<AmpIII>::setup()$/;"	f	class:Descriptor
+setup	Amp.cc	/^Descriptor<AmpIV>::setup()$/;"	f	class:Descriptor
+setup	Amp.cc	/^Descriptor<AmpV>::setup()$/;"	f	class:Descriptor
+setup	Amp.cc	/^Descriptor<AmpVTS>::setup()$/;"	f	class:Descriptor
+setup	Cabinet.cc	/^Descriptor<CabinetI>::setup()$/;"	f	class:Descriptor
+setup	Cabinet.cc	/^Descriptor<CabinetII>::setup()$/;"	f	class:Descriptor
+setup	Chorus.cc	/^Descriptor<ChorusI>::setup()$/;"	f	class:Descriptor
+setup	Chorus.cc	/^Descriptor<ChorusII>::setup()$/;"	f	class:Descriptor
+setup	Chorus.cc	/^Descriptor<StereoChorusI>::setup()$/;"	f	class:Descriptor
+setup	Chorus.cc	/^Descriptor<StereoChorusII>::setup()$/;"	f	class:Descriptor
+setup	Click.cc	/^Descriptor<CEO>::setup()$/;"	f	class:Descriptor
+setup	Click.cc	/^Descriptor<Click>::setup()$/;"	f	class:Descriptor
+setup	Click.cc	/^Descriptor<Dirac>::setup()$/;"	f	class:Descriptor
+setup	Clip.cc	/^Descriptor<Clip>::setup()$/;"	f	class:Descriptor
+setup	Compress.cc	/^Descriptor<Compress>::setup()$/;"	f	class:Descriptor
+setup	Eq.cc	/^Descriptor<Eq2x2>::setup()$/;"	f	class:Descriptor
+setup	Eq.cc	/^Descriptor<Eq>::setup()$/;"	f	class:Descriptor
+setup	HRTF.cc	/^Descriptor<HRTF>::setup()$/;"	f	class:Descriptor
+setup	Lorenz.cc	/^Descriptor<Lorenz>::setup()$/;"	f	class:Descriptor
+setup	Pan.cc	/^Descriptor<Pan>::setup()$/;"	f	class:Descriptor
+setup	Phaser.cc	/^Descriptor<PhaserI>::setup()$/;"	f	class:Descriptor
+setup	Phaser.cc	/^Descriptor<PhaserII>::setup()$/;"	f	class:Descriptor
+setup	Preamp.cc	/^Descriptor<PreampIII>::setup()$/;"	f	class:Descriptor
+setup	Preamp.cc	/^Descriptor<PreampIV>::setup()$/;"	f	class:Descriptor
+setup	Reverb.cc	/^Descriptor<JVRev>::setup()$/;"	f	class:Descriptor
+setup	Reverb.cc	/^Descriptor<Plate2x2>::setup()$/;"	f	class:Descriptor
+setup	Reverb.cc	/^Descriptor<Plate>::setup()$/;"	f	class:Descriptor
+setup	Roessler.cc	/^Descriptor<Roessler>::setup()$/;"	f	class:Descriptor
+setup	Scape.cc	/^Descriptor<Scape>::setup()$/;"	f	class:Descriptor
+setup	Sin.cc	/^Descriptor<Sin>::setup()$/;"	f	class:Descriptor
+setup	SweepVF.cc	/^Descriptor<AutoWah>::setup()$/;"	f	class:Descriptor
+setup	SweepVF.cc	/^Descriptor<SweepVFI>::setup()$/;"	f	class:Descriptor
+setup	SweepVF.cc	/^Descriptor<SweepVFII>::setup()$/;"	f	class:Descriptor
+setup	ToneStack.cc	/^Descriptor<ToneStack>::setup()$/;"	f	class:Descriptor
+setup	ToneStack.cc	/^Descriptor<ToneStackLT>::setup()$/;"	f	class:Descriptor
+setup	VCO.cc	/^Descriptor<VCOd>::setup()$/;"	f	class:Descriptor
+setup	VCO.cc	/^Descriptor<VCOs>::setup()$/;"	f	class:Descriptor
+setup	White.cc	/^Descriptor<White>::setup()$/;"	f	class:Descriptor
+sin	Sin.h	/^		DSP::Sine sin;$/;"	m	class:Sin
+sin	dsp/RBJ.h	/^		double alpha, sin, cos;$/;"	m	class:DSP::RBJ::RBJ
+sinc	dsp/sinc.h	/^sinc (double omega, d_sample * s, int n)$/;"	f	namespace:DSP
+size	dsp/Delay.h	/^		int size;$/;"	m	class:DSP::Delay
+square_i	dsp/VCO.h	/^		float square_i;$/;"	m	class:DSP::TriSawSquare
+st1	dsp/VCO.h	/^		float st1, st2;$/;"	m	class:DSP::TriSawSquare
+st2	dsp/VCO.h	/^		float st1, st2;$/;"	m	class:DSP::TriSawSquare
+start_cycle	Amp.h	/^		start_cycle (d_sample ** ports, double one_over_n)$/;"	f	class:ToneControls
+start_cycle	dsp/ToneStack.h	/^		void start_cycle (d_sample ** ports, int bassindex = 1)$/;"	f	class:DSP::ToneStack
+state	dsp/LatFilt.h	/^		double state[ORDER];$/;"	m	class:DSP::LatFilt
+step	dsp/Lorenz.h	/^		void step()$/;"	f	class:DSP::Lorenz
+store	dsp/FIR.h	/^		inline void store (d_sample s)$/;"	f	class:DSP::FIR
+store	dsp/RMS.h	/^		void store (d_sample x)$/;"	f	class:DSP::RMS
+store_func	basics.h	/^store_func (d_sample * s, int i, d_sample x, d_sample gain)$/;"	f
+store_sample	dsp/windows.h	/^store_sample (d_sample & d, d_sample s)$/;"	f	namespace:DSP
+sum	Compress.h	/^		d_sample sum, amp, env, gain, gain_t;$/;"	m	class:Compress
+sum	dsp/RMS.h	/^		double sum;$/;"	m	class:DSP::RMS
+supply	Amp.h	/^		d_sample supply;$/;"	m	class:AmpV
+supply	Amp.h	/^		d_sample supply;$/;"	m	class:AmpVTS
+svf	Scape.h	/^		SVF svf[4];$/;"	m	class:Scape
+svf	SweepVF.h	/^		DSP::StackedSVF<1,2> svf;$/;"	m	class:AutoWah
+svf	SweepVF.h	/^		DSP::StackedSVF<1,2> svf;$/;"	m	class:SweepVFI
+svf	SweepVF.h	/^		DSP::StackedSVF<1,2> svf;$/;"	m	class:SweepVFII
+svf	dsp/SVF.h	/^		SVF<OVERSAMPLE> svf [STACKED];$/;"	m	class:DSP::StackedSVF
+switch_model	Cabinet.cc	/^CabinetI::switch_model (int m)$/;"	f	class:CabinetI
+switch_model	Cabinet.cc	/^CabinetII::switch_model (int m)$/;"	f	class:CabinetII
+sync	dsp/VCO.h	/^		double * sync;$/;"	m	class:DSP::TriSawSquare
+sync_phase	dsp/VCO.h	/^		float sync_phase;$/;"	m	class:DSP::TriSawSquare
+t	Pan.h	/^		int t;$/;"	m	class:PanTap
+t60	Reverb.h	/^		d_sample t60;$/;"	m	class:JVRev
+tank	Reverb.h	/^		} tank;$/;"	m	class:PlateStub	typeref:struct:PlateStub::__anon18
+tap	Chorus.h	/^			DSP::DelayTapA tap;$/;"	m	struct:StereoChorusI::__anon7
+tap	Chorus.h	/^			DSP::DelayTapA tap;$/;"	m	struct:StereoChorusII::__anon9
+tap	Chorus.h	/^		DSP::DelayTapA tap;$/;"	m	class:ChorusI
+tap	Pan.h	/^		PanTap tap;$/;"	m	class:Pan
+tap	Reverb.h	/^		DSP::DelayTapA tap;$/;"	m	class:ModLattice
+taps	Chorus.h	/^		FracTap taps[Taps];$/;"	m	class:ChorusII
+taps	Reverb.h	/^			int taps[12];$/;"	m	struct:PlateStub::__anon18
+thishostsucks	Descriptor.h	/^		static int thishostsucks;$/;"	m	class:DescriptorStub
+threshold	Clip.h	/^		d_sample threshold[2];$/;"	m	class:Clip
+threshold	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::NoTwelveAX7::__anon33
+threshold	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7::__anon30
+threshold	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7_2::__anon31
+threshold	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7_3::__anon32
+time	Chorus.h	/^		d_sample time, width, rate;$/;"	m	class:ChorusStub
+time	Scape.h	/^		d_sample time, fb;$/;"	m	class:Scape
+tone	Amp.h	/^		ToneControls tone;$/;"	m	class:AmpIV
+tone	Amp.h	/^		ToneControls tone;$/;"	m	class:PreampIV
+tone	Amp.h	/^		d_sample cut, tone;$/;"	m	class:AmpV
+tone	Amp.h	/^		d_sample cut, tone;$/;"	m	class:AmpVTS
+tonestack	Amp.h	/^		DSP::ToneStack tonestack;$/;"	m	class:AmpVTS
+tonestack	ToneStack.h	/^		DSP::ToneStack tonestack;$/;"	m	class:ToneStack
+tonestack	ToneStack.h	/^		DSP::ToneStackLT tonestack;$/;"	m	class:ToneStackLT
+transfer	dsp/TwelveAX7.h	/^		inline tube_sample transfer (tube_sample a)$/;"	f	class:DSP::NoTwelveAX7
+transfer	dsp/TwelveAX7.h	/^		inline tube_sample transfer (tube_sample a)$/;"	f	class:DSP::TwelveAX7
+transfer	dsp/TwelveAX7.h	/^		inline tube_sample transfer (tube_sample a)$/;"	f	class:DSP::TwelveAX7_2
+transfer	dsp/TwelveAX7.h	/^		inline tube_sample transfer (tube_sample a)$/;"	f	class:DSP::TwelveAX7_3
+transfer_clip	dsp/TwelveAX7.h	/^		inline tube_sample transfer_clip (tube_sample a)$/;"	f	class:DSP::NoTwelveAX7
+transfer_clip	dsp/TwelveAX7.h	/^		inline tube_sample transfer_clip (tube_sample a)$/;"	f	class:DSP::TwelveAX7
+transfer_clip	dsp/TwelveAX7.h	/^		inline tube_sample transfer_clip (tube_sample a)$/;"	f	class:DSP::TwelveAX7_2
+transfer_clip	dsp/TwelveAX7.h	/^		inline tube_sample transfer_clip (tube_sample a)$/;"	f	class:DSP::TwelveAX7_3
+tri	dsp/VCO.h	/^		double tri, tri1, tri2;$/;"	m	class:DSP::TriSaw
+tri	dsp/VCO.h	/^		float tri, tri1, tri2;$/;"	m	class:DSP::TriSawSquare
+tri1	dsp/VCO.h	/^		double tri, tri1, tri2;$/;"	m	class:DSP::TriSaw
+tri1	dsp/VCO.h	/^		float tri, tri1, tri2;$/;"	m	class:DSP::TriSawSquare
+tri2	dsp/VCO.h	/^		double tri, tri1, tri2;$/;"	m	class:DSP::TriSaw
+tri2	dsp/VCO.h	/^		float tri, tri1, tri2;$/;"	m	class:DSP::TriSawSquare
+tube	Amp.h	/^		DSP::TwelveAX7_3 tube;$/;"	m	class:AmpStub
+tube_sample	dsp/TwelveAX7.h	/^typedef d_sample tube_sample;$/;"	t	namespace:DSP
+uint16	basics.h	/^typedef __uint16_t		uint16;$/;"	t
+uint32	basics.h	/^typedef __uint32_t		uint32;$/;"	t
+uint64	basics.h	/^typedef __uint64_t		uint64;$/;"	t
+uint8	basics.h	/^typedef __uint8_t			uint8;$/;"	t
+ulong	basics.h	/^typedef unsigned long ulong;$/;"	t
+up	Amp.h	/^		DSP::FIRUpsampler up;$/;"	m	class:AmpStub
+up	Clip.h	/^		DSP::FIRUpsampler up;$/;"	m	class:Clip
+updatecoefs	dsp/ToneStack.h	/^		inline void updatecoefs (d_sample ** ports) $/;"	f	class:DSP::ToneStack
+updatecoefs	dsp/ToneStack.h	/^		void updatecoefs (d_sample ** ports)$/;"	f	class:DSP::ToneStackLT
+upsample	dsp/FIR.h	/^		inline d_sample upsample (d_sample s)$/;"	f	class:DSP::FIR
+upsample	dsp/FIR.h	/^		inline d_sample upsample (d_sample s)$/;"	f	class:DSP::FIRUpsampler
+v2v	dsp/r12ax7.h	/^static float v2v[] = {$/;"	v
+value	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::NoTwelveAX7::__anon33
+value	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7::__anon30
+value	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7_2::__anon31
+value	dsp/TwelveAX7.h	/^			tube_sample threshold, value;$/;"	m	struct:DSP::TwelveAX7_3::__anon32
+vco	VCO.h	/^		DSP::TriSawSquare vco;$/;"	m	class:VCOs
+vco	VCO.h	/^		DSP::VCO2 vco;$/;"	m	class:VCOd
+vco	dsp/VCO.h	/^		TriSawSquare vco[2];$/;"	m	class:DSP::VCO2
+vcoef	dsp/LatFilt.h	/^		double vcoef[ORDER+1];$/;"	m	class:DSP::LatFilt
+vcoef	dsp/ToneStack.h	/^		double *vcoef;$/;"	m	class:DSP::ToneStackLT
+vf	dsp/LatFilt.h	/^		double vf[ORDER+1];$/;"	m	class:DSP::LatFilt
+wave	Click.h	/^		float * wave;$/;"	m	class:ClickStub
+white	White.h	/^		DSP::White white;$/;"	m	class:White
+width	Chorus.h	/^		d_sample time, width, rate;$/;"	m	class:ChorusStub
+width	Reverb.h	/^		float n0, width;$/;"	m	class:ModLattice
+window_sample_func_t	dsp/windows.h	/^typedef void (*window_sample_func_t) (d_sample &, d_sample);$/;"	t	namespace:DSP
+write	dsp/Delay.h	/^		int read, write;$/;"	m	class:DSP::Delay
+write	dsp/RMS.h	/^		int write;$/;"	m	class:DSP::RMS
+x	Cabinet.h	/^		cabinet_float x[16], y[16];$/;"	m	class:CabinetI
+x	Cabinet.h	/^		cabinet_float x[32], y[32];$/;"	m	class:CabinetII
+x	HRTF.h	/^		double x[32];$/;"	m	class:HRTF
+x	dsp/BiQuad.h	/^		d_sample x[2], y[2];$/;"	m	class:DSP::BiQuad
+x	dsp/Eq.h	/^		eq_sample x[2];$/;"	m	class:DSP::Eq
+x	dsp/FIR.h	/^		d_sample * c, * x;$/;"	m	class:DSP::FIR
+x	dsp/FIR.h	/^		d_sample * c, * x;$/;"	m	class:DSP::FIRUpsampler
+x	dsp/Lorenz.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Lorenz
+x	dsp/Roessler.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Roessler
+x1	dsp/Delay.h	/^		d_sample x1, y1;$/;"	m	class:DSP::DelayTapA
+x1	dsp/OnePole.h	/^		d_sample a0, a1, b1, x1, y1;$/;"	m	class:DSP::OnePoleHP
+y	Cabinet.h	/^		cabinet_float x[16], y[16];$/;"	m	class:CabinetI
+y	Cabinet.h	/^		cabinet_float x[32], y[32];$/;"	m	class:CabinetII
+y	HRTF.h	/^			double y[32];$/;"	m	struct:HRTF::__anon14
+y	dsp/BiQuad.h	/^		d_sample x[2], y[2];$/;"	m	class:DSP::BiQuad
+y	dsp/Eq.h	/^		eq_sample __attribute__ ((aligned)) y[2][Bands];$/;"	m	class:DSP::Eq
+y	dsp/LatFilt.h	/^		double y;$/;"	m	class:DSP::LatFilt
+y	dsp/Lorenz.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Lorenz
+y	dsp/Roessler.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Roessler
+y	dsp/Sine.h	/^		d_float y[2];$/;"	m	class:DSP::Sine
+y0	Phaser.h	/^		d_sample y0;$/;"	m	class:PhaserI
+y0	Phaser.h	/^		d_sample y0;$/;"	m	class:PhaserII
+y1	dsp/Delay.h	/^		d_sample x1, y1;$/;"	m	class:DSP::DelayTapA
+y1	dsp/OnePole.h	/^		d_sample a0, a1, b1, x1, y1;$/;"	m	class:DSP::OnePoleHP
+y1	dsp/OnePole.h	/^		d_sample a0, b1, y1;$/;"	m	class:DSP::OnePoleLP
+z	dsp/Lorenz.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Lorenz
+z	dsp/Roessler.h	/^		double x[2], y[2], z[2];	$/;"	m	class:DSP::Roessler
+z	dsp/Sine.h	/^		int z;$/;"	m	class:DSP::Sine
+zero_band	dsp/Eq.h	/^		void zero_band (int i)$/;"	f	class:DSP::Eq
+~Delay	dsp/Delay.h	/^		~Delay()$/;"	f	class:DSP::Delay
+~DescriptorStub	Descriptor.h	/^		~DescriptorStub()$/;"	f	class:DescriptorStub
+~FIR	dsp/FIR.h	/^		~FIR()$/;"	f	class:DSP::FIR
+~FIRUpsampler	dsp/FIR.h	/^		~FIRUpsampler()$/;"	f	class:DSP::FIRUpsampler
+~FPTruncateMode	dsp/FPTruncateMode.h	/^		~FPTruncateMode()$/;"	f	class:DSP::FPTruncateMode

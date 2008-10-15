@@ -1,0 +1,183 @@
+imp_1199_la-imp_1199.lo .libs/imp_1199_la-imp_1199.o: imp_1199.c \
+  /usr/include/stdlib.h /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-32.h \
+  /usr/lib/gcc/i486-linux-gnu/4.1.3/include/stddef.h \
+  /usr/include/sys/types.h /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/include/string.h /usr/include/bits/string.h \
+  /usr/include/bits/string2.h config.h /usr/include/libintl.h \
+  /usr/include/locale.h /usr/include/bits/locale.h /usr/include/math.h \
+  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h ladspa.h \
+  /usr/include/fftw3.h /usr/include/stdio.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h /usr/include/bits/wchar.h \
+  /usr/include/gconv.h /usr/lib/gcc/i486-linux-gnu/4.1.3/include/stdarg.h \
+  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+  /usr/include/bits/stdio.h ladspa-util.h /usr/include/stdint.h \
+  impulses/all.h impulses/01-unit.h impulses/02-steves-flat.h \
+  impulses/03-stk-m1.h impulses/04-fender-68-vibrolux-sm57.h \
+  impulses/05-fender-68-vibrolux-sm57-off.h \
+  impulses/06-fender-68-vibrolux-at4050.h \
+  impulses/07-fender-68-vibrolux-ui87.h impulses/08-fender-bassman-sm57.h \
+  impulses/09-fender-bassman-sm57-off.h \
+  impulses/10-fender-bassman-at4050.h impulses/11-fender-bassman-ui87.h \
+  impulses/12-fender-superchamp-sm57.h \
+  impulses/13-fender-superchamp-sm57-off.h \
+  impulses/14-fender-superchamp-at4050.h \
+  impulses/15-fender-superchamp-ui87.h \
+  impulses/16-marshall-jcm2000-sm57.h \
+  impulses/17-marshall-jcm2000-sm57-off.h \
+  impulses/18-marshall-plexi-sm57.h impulses/19-marshall-plexi-sm57-off.h \
+  impulses/20-matchless-chieftain-sm57.h \
+  impulses/21-matchless-chieftain-sm57-off.h
+
+/usr/include/stdlib.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.1.3/include/stddef.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+config.h:
+
+/usr/include/libintl.h:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+ladspa.h:
+
+/usr/include/fftw3.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/gconv.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.1.3/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+ladspa-util.h:
+
+/usr/include/stdint.h:
+
+impulses/all.h:
+
+impulses/01-unit.h:
+
+impulses/02-steves-flat.h:
+
+impulses/03-stk-m1.h:
+
+impulses/04-fender-68-vibrolux-sm57.h:
+
+impulses/05-fender-68-vibrolux-sm57-off.h:
+
+impulses/06-fender-68-vibrolux-at4050.h:
+
+impulses/07-fender-68-vibrolux-ui87.h:
+
+impulses/08-fender-bassman-sm57.h:
+
+impulses/09-fender-bassman-sm57-off.h:
+
+impulses/10-fender-bassman-at4050.h:
+
+impulses/11-fender-bassman-ui87.h:
+
+impulses/12-fender-superchamp-sm57.h:
+
+impulses/13-fender-superchamp-sm57-off.h:
+
+impulses/14-fender-superchamp-at4050.h:
+
+impulses/15-fender-superchamp-ui87.h:
+
+impulses/16-marshall-jcm2000-sm57.h:
+
+impulses/17-marshall-jcm2000-sm57-off.h:
+
+impulses/18-marshall-plexi-sm57.h:
+
+impulses/19-marshall-plexi-sm57-off.h:
+
+impulses/20-matchless-chieftain-sm57.h:
+
+impulses/21-matchless-chieftain-sm57-off.h:

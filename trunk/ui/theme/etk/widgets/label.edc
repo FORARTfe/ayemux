@@ -1,0 +1,105 @@
+/**
+ * group "etk/label"
+ * -----------------------
+ * This group corresponds to the default look of a label widget
+ *
+ * Special parts:
+ * --------------
+ * - "etk.text.label": the text part used to display the button's text
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+group {
+   name: "etk/label";
+   parts {
+      part {
+         name: "etk.text.label";
+         type: TEXTBLOCK;
+         description {
+            state: "default" 0.0;
+            align: 0.0 0.5;
+            rel1 {
+               offset: 5 0;
+            }
+            text {
+               style: "Default";
+               min: 1 1;
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            text {
+               style: "Button Disabled";
+               min: 1 1;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "label_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.label";
+      }
+      program {
+         name: "label_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.label";
+      }
+   }
+}
+group {
+   name: "etk/tree/header/label";
+   alias: "etk/tree/header_unique/label";
+   alias: "etk/tree/header_first/label";
+   alias: "etk/tree/header_last/label";
+   alias: "etk/notebook/tab/label";
+   parts {
+      part {
+         name: "etk.text.label";
+         type: TEXTBLOCK;
+         description {
+            state: "default" 0.0;
+            align: 0.0 0.5;
+            rel1 {
+               offset: 5 0;
+            }
+            text {
+               style: "Button Default";
+               min: 1 1;
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            text {
+               style: "Button Disabled";
+               min: 1 1;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "label_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.label";
+      }
+      program {
+         name: "label_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.label";
+      }
+   }
+}

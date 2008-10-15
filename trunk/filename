@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ayeMux>
+  <patch patch_name="Untitled Rack" state_count="1">
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: AmpIII - Tube amp emulation" plugin_ref_ID="1786">
+      <control_port control_port_name="gain">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="temperature">
+        <control_port_state control_port_state-current_real_value="0.502500"/>
+      </control_port>
+      <control_port control_port_name="drive">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="latency">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: AmpIV - Tube amp emulation + tone controls" plugin_ref_ID="1794">
+      <control_port control_port_name="gain">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="temperature">
+        <control_port_state control_port_state-current_real_value="0.502500"/>
+      </control_port>
+      <control_port control_port_name="bass">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="mid">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="treble">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="hi">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="drive">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="latency">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: AmpV - Refined tube amp emulation" plugin_ref_ID="2587">
+      <control_port control_port_name="gain">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="bass">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="tone">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <control_port control_port_name="drive">
+        <control_port_state control_port_state-current_real_value="0.750025"/>
+      </control_port>
+      <control_port control_port_name="watts">
+        <control_port_state control_port_state-current_real_value="77.500000"/>
+      </control_port>
+      <control_port control_port_name="latency">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: CabinetI - Loudspeaker cabinet emulation" plugin_ref_ID="1766">
+      <control_port control_port_name="model">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="gain (dB)">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: CabinetII - Refined loudspeaker cabinet emulation" plugin_ref_ID="2581">
+      <control_port control_port_name="model">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="gain (dB)">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: ChorusI - Mono chorus/flanger" plugin_ref_ID="1767">
+      <control_port control_port_name="t (ms)">
+        <control_port_state control_port_state-current_real_value="5.000000"/>
+      </control_port>
+      <control_port control_port_name="width (ms)">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="rate (Hz)">
+        <control_port_state control_port_state-current_real_value="1.250000"/>
+      </control_port>
+      <control_port control_port_name="blend">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="feedforward">
+        <control_port_state control_port_state-current_real_value="0.250000"/>
+      </control_port>
+      <control_port control_port_name="feedback">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: ChorusII - Mono chorus/flanger modulated by a fractal" plugin_ref_ID="2583">
+      <control_port control_port_name="t (ms)">
+        <control_port_state control_port_state-current_real_value="5.000000"/>
+      </control_port>
+      <control_port control_port_name="width (ms)">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="rate">
+        <control_port_state control_port_state-current_real_value="0.250000"/>
+      </control_port>
+      <control_port control_port_name="blend">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="feedforward">
+        <control_port_state control_port_state-current_real_value="0.250000"/>
+      </control_port>
+      <control_port control_port_name="feedback">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <live_plugin_jack ladspa_plugin-object_file="/usr/lib/ladspa/caps.so" plugin_name="CAPS: Clip - Hard clipper, 8x oversampled" plugin_ref_ID="1771">
+      <control_port control_port_name="gain (dB)">
+        <control_port_state control_port_state-current_real_value="1.000000"/>
+      </control_port>
+      <control_port control_port_name="latency">
+        <control_port_state control_port_state-current_real_value="0.000000"/>
+      </control_port>
+      <state>
+        <live_plugin_state wet_dry_value="0.000000" bypass="0"/>
+      </state>
+    </live_plugin_jack>
+    <midi>
+      <midi_state type="0" channel="0" program="0"/>
+    </midi>
+    <jack/>
+  </patch>
+</ayeMux>
