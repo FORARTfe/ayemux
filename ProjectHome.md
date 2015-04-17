@@ -1,0 +1,3 @@
+ayeMux is a program that patches LADSPA audio plugins using Jack to create a real time audio fx system similar to Guitar Rig. Patches of plugins can be saved as racks. Each rack can have multiple states. The states and racks can be switch via a midi foot controller. A plugin's controls within a rack can be assigned to midi controllers such as expression pedals and switches
+
+![http://oko-t.com/ayemux/screen.jpg](http://oko-t.com/ayemux/screen.jpg)
